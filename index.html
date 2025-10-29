@@ -447,104 +447,104 @@
 </footer>
 
 <script>
-    // Filtrage live
-    const q = document.getElementById('q');
-    const groups = Array.from(document.querySelectorAll('details.group'));
-    const tiles = Array.from(document.querySelectorAll('.tile'));
+    // — Officiel Kodokan × IJF Academy —
+    const OFFICIAL = {
+        // Koshi-waza
+        "O-goshi": "https://www.youtube.com/watch?v=yhu1mfy2vJ4",
+        "Tsurikomi-goshi": "https://www.youtube.com/watch?v=McfzA0yRVt4",
+        "Uki-goshi": "https://www.youtube.com/watch?v=bPKwtB4lyOQ",
+        // Te-waza
+        "Ippon-seoi-nage": "https://www.youtube.com/watch?v=FQnOlCxo4oI",
+        "Uki-otoshi": "https://www.youtube.com/watch?v=6H5tmncOY4Q",
+        "Tai-otoshi": "https://www.youtube.com/watch?v=4x6S3Q-Ktv8",
+        // Pas de vidéo “Morote-seoi-nage” dédiée sur la chaîne Kodokan :
+        // on renvoie vers Seoi-nage (référence officielle)
+        "Morote-seoi-nage": "https://www.youtube.com/watch?v=zIq0xI0ogxk",
+        // Ashi-waza
+        "Ko-soto-gari": "https://www.youtube.com/watch?v=jeQ541ScLB4",
+        "Ko-uchi-gari": "https://www.youtube.com/watch?v=3Jb3tZvr9Ng",
+        // Sutemi-waza
+        "Sumi-gaeshi": "https://www.youtube.com/watch?v=5VhduA5xkbA",
+        // Shime-waza
+        "Nami-juji-jime": "https://www.youtube.com/watch?v=k2cHry9HByQ",
+        // Kansetsu-waza
+        "Ude-hishigi-juji-gatame": "https://www.youtube.com/watch?v=OWgSOlCuMXw",
+        "Ude-hishigi-ude-garami": "https://www.youtube.com/watch?v=SBf0aTma1VI"
+    };
 
-    q.addEventListener('input', () => {
-        const v = q.value.trim().toLowerCase();
-        tiles.forEach(tile => {
-            const hay = (tile.textContent + ' ' + (tile.getAttribute('data-tags') || '')).toLowerCase();
-            tile.style.display = hay.includes(v) ? '' : 'none';
-        });
-    });
+    // Mets aussi les liens déjà présents pour homogénéiser
+    const PRESET = {
+        "Harai-goshi": "https://www.youtube.com/watch?v=qTo8HlAAkOo",
+        "Kubi-nage": "https://www.youtube.com/watch?v=ClkSYVSL50A",
+        "Koshi-guruma": "https://www.youtube.com/watch?v=SU7Id6uVJ44",
+        "Uchi-mata": "https://www.youtube.com/watch?v=iUpSu5J-bgw",
+        "Kata-guruma": "https://www.youtube.com/watch?v=g1C2E0g7yNw",
+        "De-ashi-barai": "https://www.youtube.com/watch?v=4BUUvqxi_Kk",
+        "Hiza-guruma": "https://www.youtube.com/watch?v=JPJx9-oAVns",
+        "Sasae-tsurikomi-ashi": "https://www.youtube.com/watch?v=699i--pvYmE",
+        "Okuri-ashi-barai": "https://www.youtube.com/watch?v=nw1ZdRjrdRI",
+        "O-soto-gari": "https://www.youtube.com/watch?v=c-A_nP7mKAc",
+        "Tomoe-nage": "https://www.youtube.com/watch?v=880WbHvHv6A",
+        "Hon-gesa-gatame": "https://www.youtube.com/watch?v=guJ-HlAKEA8",
+        "Kami-shiho-gatame": "https://www.youtube.com/watch?v=KCDo1fEIFS0",
+        "Yoko-shiho-gatame": "https://www.youtube.com/watch?v=KCDo1fEIFS0",
+        "Tate-shiho-gatame": "https://www.youtube.com/watch?v=55-rFmBx53g",
+        "Ushiro-gesa-gatame": "https://www.youtube.com/watch?v=SBapox2M2dE",
+        "Gyaku-juji-jime": "https://www.youtube.com/watch?v=y83rjTa5_1s",
+        "Hadaka-jime": "https://www.youtube.com/watch?v=9f0n8jez7iA",
+        "Kata-juji-jime": "https://www.youtube.com/watch?v=3VZVUAmiMD8"
+    };
 
-    // Tout ouvrir / fermer
-    const toggleBtn = document.getElementById('toggleOpen');
-    let allOpen = true;
-    toggleBtn.addEventListener('click', () => {
-        allOpen = !allOpen;
-        groups.forEach(g => g.open = allOpen);
-        toggleBtn.textContent = allOpen ? 'Tout fermer' : 'Tout ouvrir';
-    });
-    // === Enhancements injected ===
-    // 1) Override knownLinks with more complete Kodokan/IJF refs
-    window.knownLinks = Object.assign({}, window.knownLinks || {}, {
-        'Harai-goshi': ['https://www.youtube.com/watch?v=qTo8HlAAkOo'],
-        'Kubi-nage': ['https://www.youtube.com/watch?v=ClkSYVSL50A'],
-        'Koshi-guruma': ['https://www.youtube.com/watch?v=SU7Id6uVJ44'],
-        'O-goshi': ['https://www.youtube.com/watch?v=yhu1mfy2vJ4'],
-        'Tsurikomi-goshi': ['https://www.youtube.com/watch?v=McfzA0yRVt4'],
-        'Uchi-mata': ['https://www.youtube.com/watch?v=iUpSu5J-bgw'],
-        'Uki-goshi': ['https://www.youtube.com/results?search_query=Kodokan+Uki+goshi'],
-        'Ippon-seoi-nage': ['https://www.youtube.com/results?search_query=Kodokan+Ippon+Seoi+Nage'],
-        'Kata-guruma': ['https://www.youtube.com/watch?v=g1C2E0g7yNw'],
-        'Uki-otoshi': ['https://www.youtube.com/results?search_query=Kodokan+Uki+otoshi'],
-        'Tai-otoshi': ['https://www.youtube.com/results?search_query=Kodokan+Tai+otoshi'],
-        'Morote-seoi-nage': ['https://www.youtube.com/results?search_query=Kodokan+Morote+Seoi+Nage'],
-        'De-ashi-barai': ['https://www.youtube.com/watch?v=4BUUvqxi_Kk'],
-        'Hiza-guruma': ['https://www.youtube.com/watch?v=JPJx9-oAVns'],
-        'Sasae-tsurikomi-ashi': ['https://www.youtube.com/watch?v=699i--pvYmE'],
-        'Ko-soto-gari': ['https://www.youtube.com/results?search_query=Kodokan+Ko+soto+gari'],
-        'Ko-uchi-gari': ['https://www.youtube.com/results?search_query=Kodokan+Ko+uchi+gari'],
-        'Okuri-ashi-barai': ['https://www.youtube.com/watch?v=nw1ZdRjrdRI'],
-        'O-soto-gari': ['https://www.youtube.com/watch?v=c-A_nP7mKAc'],
-        'Sumi-gaeshi': ['https://www.youtube.com/results?search_query=Kodokan+Sumi+gaeshi'],
-        'Tomoe-nage': ['https://www.youtube.com/watch?v=880WbHvHv6A'],
-        'Hon-gesa-gatame': ['https://www.youtube.com/watch?v=guJ-HlAKEA8'],
-        'Kami-shiho-gatame': ['https://www.youtube.com/watch?v=KCDo1fEIFS0'],
-        'Yoko-shiho-gatame': ['https://www.youtube.com/watch?v=KCDo1fEIFS0'],
-        'Tate-shiho-gatame': ['https://www.youtube.com/watch?v=55-rFmBx53g'],
-        'Ushiro-gesa-gatame': ['https://www.youtube.com/watch?v=SBapox2M2dE'],
-        'Gyaku-juji-jime': ['https://www.youtube.com/watch?v=y83rjTa5_1s'],
-        'Hadaka-jime': ['https://www.youtube.com/watch?v=9f0n8jez7iA'],
-        'Kata-juji-jime': ['https://www.facebook.com/kodokanjudoinstitute/videos/%E7%89%87%E5%8D%81%E5%AD%97%E7%B5%9E-kata-juji-jime/499055211505081/'],
-        'Nami-juji-jime': ['https://www.youtube.com/results?search_query=Kodokan+Nami+juji+jime'],
-        'Ude-hishigi-juji-gatame': ['https://www.youtube.com/results?search_query=Kodokan+Juji+gatame'],
-        'Ude-hishigi-ude-garami': ['https://www.youtube.com/results?search_query=Kodokan+Ude+garami']
-    });
+    const LINKS = {...PRESET, ...OFFICIAL};
 
-    // 2) Post-process cards: add anchors + preview and bookmark buttons if absent
-    (function enhanceCards(){
-        const cards = [...document.querySelectorAll('.card')];
-        for(const card of cards){
-            // anchor id
-            if(!card.id){
-                const titleEl = card.querySelector('h3');
-                const name = (titleEl?.textContent || 'tech').toLowerCase().replace(/[^a-z0-9]+/g,'-');
-                card.id = name;
-                if(titleEl && !titleEl.querySelector('a')){
-                    titleEl.innerHTML = `<a href="#${card.id}" style="text-decoration:none;color:inherit">${titleEl.innerText}</a>`;
-                }
-            }
-            // actions
-            const nameText = (card.querySelector('h3')?.innerText||'').split('(')[0].trim();
-            const links = window.knownLinks[nameText] || [];
-            const actions = card.querySelector('.actions');
-            if(actions){
-                if(!actions.querySelector('[data-embed]')){
-                    const btn = document.createElement('button');
-                    btn.className = 'btn';
-                    btn.setAttribute('data-embed', links[0]||'');
-                    btn.textContent = 'Aperçu';
-                    actions.prepend(btn);
-                }
-                if(!actions.querySelector('[data-bookmark]')){
-                    const star = document.createElement('button');
-                    star.className = 'btn'; star.setAttribute('data-bookmark','true'); star.textContent = '⭐';
-                    actions.appendChild(star);
-                }
-            }
+    // Normalisation rapide du texte (tirets, espaces fines, etc.)
+    const norm = s => (s||"")
+        .replace(/\u2011|\u2013|\u2014|\u2212/g, "-") // tirets
+        .replace(/\u00A0/g, " ") // espaces insécables
+        .replace(/\s+/g, " ")
+        .trim();
+
+    // Parcours des tuiles et mise à jour auto
+    document.querySelectorAll(".tile").forEach(tile => {
+        const jp = tile.querySelector(".title .jp");
+        if(!jp) return;
+        const key = norm(jp.textContent);
+        const url = LINKS[key];
+        if(!url) return;
+
+        // 1) Meta
+        const meta = tile.querySelector(".meta");
+        if (meta) meta.textContent = "Vidéo : Kodokan × IJF Academy";
+
+        // 2) Boutons d’action
+        const actions = tile.querySelector(".actions");
+        if (!actions) return;
+
+        // a) Premier bouton -> Ouvrir la vidéo (ou création si absent)
+        let openBtn = actions.querySelector('a.btn-small[href^="http"]');
+        if (!openBtn) {
+            openBtn = document.createElement("a");
+            openBtn.className = "btn-small";
+            openBtn.target = "_blank";
+            actions.prepend(openBtn);
         }
-    })();
+        openBtn.href = url;
+        openBtn.textContent = "Ouvrir la vidéo";
 
-    // 3) Add global keyboard shortcuts: '/' focus search, 'p' print, 'e' export CSV
-    window.addEventListener('keydown', (e)=>{
-        if(e.key === '/' && document.activeElement !== q){ e.preventDefault(); q.focus(); }
-        if(e.key.toLowerCase() === 'p' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); window.print(); }
+        // b) Si un bouton “Chercher la vidéo” traîne, on le garde en 2e
+        // sinon on ajoute la recherche YouTube officielle
+        const hasSearch = [...actions.querySelectorAll("a.btn-small")]
+            .some(a => /Chercher/i.test(a.textContent));
+        if (!hasSearch) {
+            const search = document.createElement("a");
+            search.className = "btn-small";
+            search.target = "_blank";
+            const q = encodeURIComponent(`Kodokan ${key.replaceAll("-","-").replaceAll(" ", "+")}`);
+            search.href = `https://www.youtube.com/results?search_query=${q}`;
+            search.textContent = "Chercher d'autres sources";
+            actions.appendChild(search);
+        }
     });
-
 </script>
 </body>
 </html>
