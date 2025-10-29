@@ -68,20 +68,35 @@
       .ok { background: rgba(34,197,94,.1); border-color: rgba(34,197,94,.35); color: #86efac; }
       .warn { background: rgba(245,158,11,.08); border-color: rgba(245,158,11,.35); color: #facc15; }
 
-      a.btn-small { text-decoration: none; display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border); background: #0e1322; color: var(--text); font-size: 12.5px; }
-      a.btn-small:hover { border-color: #2b3756; }
+      a.btn-small, button.btn-small {
+          text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+          padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border);
+          background: #0e1322; color: var(--text); font-size: 12.5px; cursor: pointer;
+      }
+      a.btn-small:hover, button.btn-small:hover { border-color: #2b3756; }
 
       .checkline { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 12.5px; color: var(--muted); }
       .checkline input { width: 18px; height: 18px; accent-color: var(--accent-2); }
 
       footer { text-align: center; color: var(--muted); padding: 30px 12px 60px; }
       .note { color: var(--warn); font-size: 12px; margin-top: 8px; }
+
       /* --- Light mode support (auto) --- */
       @media (prefers-color-scheme: light) {
           :root { --bg:#f6f7fb; --card:#ffffff; --muted:#4b5563; --text:#0f172a; --accent:#0ea5e9; --accent-2:#6d28d9; --chip:#f3f4f6; --chip-border:#e5e7eb; }
           body { background:#f6f7fb; }
           .btn.primary { background: linear-gradient(180deg, #f8fafc, #eef2f7); border-color: #d1d5db; }
       }
+
+      /* ===== Modal vidéo (iframe) ===== */
+      .modal { position: fixed; inset: 0; z-index: 50; display: none; }
+      .modal.open { display: block; }
+      .modal .backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.65); backdrop-filter: blur(2px); }
+      .modal .dialog { position: relative; max-width: 980px; margin: 5vh auto; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: #0e1322; box-shadow: 0 20px 60px rgba(0,0,0,.55); }
+      .modal .head { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--muted); }
+      .modal .close { cursor: pointer; border: 1px solid var(--border); background: #0e1322; color: var(--text); border-radius: 10px; padding: 6px 10px; }
+      .modal .body { padding: 0; }
+      .modal .frame { aspect-ratio: 16/9; width: 100%; height: auto; border: 0; display: block; }
   </style>
 </head>
 <body>
@@ -104,75 +119,84 @@
   <!-- Group: Koshi-waza -->
   <details class="group" open>
     <summary>
-      <span class="badge">Koshi‑waza</span>
+      <span class="badge">Koshi-waza</span>
       <span class="muted">Techniques de hanches</span>
     </summary>
     <div class="grid">
       <!-- Harai-goshi -->
       <article class="tile" data-tags="harai-goshi hanche fauchage projection koshi-waza">
-        <div class="title"><h3><span class="jp">Harai‑goshi</span> — Fauchage de hanche</h3></div>
-        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
+        <div class="title"><h3><span class="jp">Harai-goshi</span> — Fauchage de hanche</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=qTo8HlAAkOo">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=qTo8HlAAkOo">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Harai+goshi">Chercher d'autres sources</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <!-- Kubi-nage -->
       <article class="tile" data-tags="kubi-nage nuque projection koshi-waza">
-        <div class="title"><h3><span class="jp">Kubi‑nage</span> — Projection par la nuque</h3></div>
-        <div class="meta">Vidéo : demo (Neck Throw)</div>
+        <div class="title"><h3><span class="jp">Kubi-nage</span> — Projection par la nuque</h3></div>
+        <div class="meta">Vidéo : demo (Neck Throw)</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=ClkSYVSL50A">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=ClkSYVSL50A">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Kubi+nage">Chercher d'autres sources</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <!-- Koshi-guruma -->
       <article class="tile" data-tags="koshi-guruma hanche roue projection koshi-waza">
-        <div class="title"><h3><span class="jp">Koshi‑guruma</span> — Roue autour des hanches</h3></div>
-        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
+        <div class="title"><h3><span class="jp">Koshi-guruma</span> — Roue autour des hanches</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=SU7Id6uVJ44">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=SU7Id6uVJ44">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Koshi+guruma">Chercher d'autres sources</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <!-- O-goshi -->
       <article class="tile" data-tags="o-goshi grande hanche projection koshi-waza">
-        <div class="title"><h3><span class="jp">O‑goshi</span> — Grande hanche</h3></div>
-        <div class="meta">Vidéo : à compléter (lien Kodokan recommandé)</div>
+        <div class="title"><h3><span class="jp">O-goshi</span> — Grande hanche</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+O+goshi">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=yhu1mfy2vJ4">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=yhu1mfy2vJ4">Aperçu</button>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+O+goshi">Chercher d'autres sources</a>
         </div>
-        <div class="note">Pas de lien officiel ajouté ici : utilise la recherche ci‑dessus si besoin.</div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <!-- Tsurikomi-goshi -->
       <article class="tile" data-tags="tsurikomi-goshi hanche traction elevation projection koshi-waza">
-        <div class="title"><h3><span class="jp">Tsurikomi‑goshi</span> — Hanche avec traction et élévation</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Tsurikomi-goshi</span> — Hanche avec traction et élévation</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Tsurikomi+goshi">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=McfzA0yRVt4">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=McfzA0yRVt4">Aperçu</button>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Tsurikomi+goshi">Chercher d'autres sources</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
-      <!-- Uchi-mata (listé initialement en Koshi, classé Ashi par Kodokan) -->
+      <!-- Uchi-mata -->
       <article class="tile" data-tags="uchi-mata cuisse interieur fauchage ashi-waza koshi-waza">
-        <div class="title"><h3><span class="jp">Uchi‑mata</span> — Fauchage intérieur de cuisse</h3></div>
-        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
+        <div class="title"><h3><span class="jp">Uchi-mata</span> — Fauchage intérieur de cuisse</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=iUpSu5J-bgw">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=iUpSu5J-bgw">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Uchi+mata">Chercher d'autres sources</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <!-- Uki-goshi -->
       <article class="tile" data-tags="uki-goshi hanche flottante projection koshi-waza">
-        <div class="title"><h3><span class="jp">Uki‑goshi</span> — Hanche flottante</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Uki-goshi</span> — Hanche flottante</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Uki+goshi">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=bPKwtB4lyOQ">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=bPKwtB4lyOQ">Aperçu</button>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Uki+goshi">Chercher d'autres sources</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
@@ -182,47 +206,56 @@
   <!-- Group: Te-waza -->
   <details class="group" open>
     <summary>
-      <span class="badge">Te‑waza</span>
+      <span class="badge">Te-waza</span>
       <span class="muted">Techniques de bras</span>
     </summary>
     <div class="grid">
       <article class="tile" data-tags="ippon seoi nage epaule bras projection te-waza">
-        <div class="title"><h3><span class="jp">Ippon‑seoi‑nage</span> — Projection par l'épaule (une main)</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Ippon-seoi-nage</span> — Projection par l'épaule (une main)</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=FQnOlCxo4oI">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=FQnOlCxo4oI">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Ippon+Seoi+Nage">Chercher la vidéo</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="kata-guruma roue epaules projection te-waza">
-        <div class="title"><h3><span class="jp">Kata‑guruma</span> — Roue autour des épaules</h3></div>
-        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
+        <div class="title"><h3><span class="jp">Kata-guruma</span> — Roue autour des épaules</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=g1C2E0g7yNw">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=g1C2E0g7yNw">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Kata+guruma">Chercher d'autres sources</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="uki-otoshi chute flottante projection te-waza">
-        <div class="title"><h3><span class="jp">Uki‑otoshi</span> — Chute flottante</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Uki-otoshi</span> — Chute flottante</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=6H5tmncOY4Q">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=6H5tmncOY4Q">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Uki+otoshi">Chercher la vidéo</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="tai-otoshi chute du corps projection te-waza">
-        <div class="title"><h3><span class="jp">Tai‑otoshi</span> — Chute du corps</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Tai-otoshi</span> — Chute du corps</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=4x6S3Q-Ktv8">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=4x6S3Q-Ktv8">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Tai+otoshi">Chercher la vidéo</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="morote seoi nage epaule deux mains projection te-waza">
-        <div class="title"><h3><span class="jp">Morote‑seoi‑nage</span> — Projection par l'épaule (à deux mains)</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Morote-seoi-nage</span> — Projection par l'épaule (à deux mains)</h3></div>
+        <div class="meta">Vidéo : Réf. Seoi-nage (Kodokan)</div>
         <div class="actions">
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=zIq0xI0ogxk">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=zIq0xI0ogxk">Aperçu</button>
           <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Morote+Seoi+Nage">Chercher la vidéo</a>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
@@ -233,63 +266,70 @@
   <!-- Group: Ashi-waza -->
   <details class="group" open>
     <summary>
-      <span class="badge">Ashi‑waza</span>
+      <span class="badge">Ashi-waza</span>
       <span class="muted">Techniques de jambes</span>
     </summary>
     <div class="grid">
       <article class="tile" data-tags="de-ashi-barai balayage pied avance ashi-waza">
-        <div class="title"><h3><span class="jp">De‑ashi‑barai</span> — Balayage des pieds avancés</h3></div>
-        <div class="meta">Vidéo : Kodokan / IJF demo</div>
+        <div class="title"><h3><span class="jp">De-ashi-barai</span> — Balayage des pieds avancés</h3></div>
+        <div class="meta">Vidéo : Kodokan / IJF demo</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=4BUUvqxi_Kk">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=4BUUvqxi_Kk">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="hiza-guruma roue genou ashi-waza">
-        <div class="title"><h3><span class="jp">Hiza‑guruma</span> — Roue autour du genou</h3></div>
-        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
+        <div class="title"><h3><span class="jp">Hiza-guruma</span> — Roue autour du genou</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=JPJx9-oAVns">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=JPJx9-oAVns">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="sasae-tsurikomi-ashi blocage pied traction ashi-waza">
-        <div class="title"><h3><span class="jp">Sasae‑tsurikomi‑ashi</span> — Blocage du pied avec traction</h3></div>
-        <div class="meta">Vidéo : Kodokan demo</div>
+        <div class="title"><h3><span class="jp">Sasae-tsurikomi-ashi</span> — Blocage du pied avec traction</h3></div>
+        <div class="meta">Vidéo : Kodokan demo</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=699i--pvYmE">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=699i--pvYmE">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="ko-soto-gari petit fauchage exterieur ashi-waza">
-        <div class="title"><h3><span class="jp">Ko‑soto‑gari</span> — Petit fauchage extérieur</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Ko-soto-gari</span> — Petit fauchage extérieur</h3></div>
+        <div class="meta">Vidéo : Kodokan</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Ko+soto+gari">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=jeQ541ScLB4">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=jeQ541ScLB4">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="ko-uchi-gari petit fauchage interieur ashi-waza">
-        <div class="title"><h3><span class="jp">Ko‑uchi‑gari</span> — Petit fauchage intérieur</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Ko-uchi-gari</span> — Petit fauchage intérieur</h3></div>
+        <div class="meta">Vidéo : Kodokan</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Ko+uchi+gari">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=3Jb3tZvr9Ng">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=3Jb3tZvr9Ng">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="okuri-ashi-barai balayage des pieds en mouvement ashi-waza">
-        <div class="title"><h3><span class="jp">Okuri‑ashi‑barai</span> — Balayage des deux pieds en mouvement</h3></div>
-        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
+        <div class="title"><h3><span class="jp">Okuri-ashi-barai</span> — Balayage des deux pieds en mouvement</h3></div>
+        <div class="meta">Vidéo : Kodokan × IJF Academy</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=nw1ZdRjrdRI">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=nw1ZdRjrdRI">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="o-soto-gari grand fauchage exterieur ashi-waza">
-        <div class="title"><h3><span class="jp">O‑soto‑gari</span> — Grand fauchage extérieur</h3></div>
-        <div class="meta">Vidéo : Kodokan demo</div>
+        <div class="title"><h3><span class="jp">O-soto-gari</span> — Grand fauchage extérieur</h3></div>
+        <div class="meta">Vidéo : Kodokan demo</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=c-A_nP7mKAc">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=c-A_nP7mKAc">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
@@ -299,23 +339,25 @@
   <!-- Group: Sutemi-waza -->
   <details class="group" open>
     <summary>
-      <span class="badge">Sutemi‑waza</span>
+      <span class="badge">Sutemi-waza</span>
       <span class="muted">Techniques de sacrifice</span>
     </summary>
     <div class="grid">
       <article class="tile" data-tags="sumi-gaeshi renversement coin sacrifice sutemi-waza">
-        <div class="title"><h3><span class="jp">Sumi‑gaeshi</span> — Renversement de coin</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Sumi-gaeshi</span> — Renversement de coin</h3></div>
+        <div class="meta">Vidéo : Kodokan</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Sumi+gaeshi">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=5VhduA5xkbA">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=5VhduA5xkbA">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="tomoe-nage cercle sacrifice sutemi-waza">
-        <div class="title"><h3><span class="jp">Tomoe‑nage</span> — Projection en cercle</h3></div>
-        <div class="meta">Vidéo : Kodokan / IJF demo</div>
+        <div class="title"><h3><span class="jp">Tomoe-nage</span> — Projection en cercle</h3></div>
+        <div class="meta">Vidéo : Kodokan / IJF demo</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=880WbHvHv6A">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=880WbHvHv6A">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
@@ -325,47 +367,52 @@
   <!-- Group: Osaekomi-waza -->
   <details class="group" open>
     <summary>
-      <span class="badge">Osaekomi‑waza</span>
+      <span class="badge">Osaekomi-waza</span>
       <span class="muted">Immobilisations</span>
     </summary>
     <div class="grid">
       <article class="tile" data-tags="hon-gesa-gatame controle lateral fondamental immobilisation">
-        <div class="title"><h3><span class="jp">Hon‑gesa‑gatame</span> — Contrôle fondamental latéral</h3></div>
-        <div class="meta">Vidéo : série Osaekomi (Kodokan)</div>
+        <div class="title"><h3><span class="jp">Hon-gesa-gatame</span> — Contrôle fondamental latéral</h3></div>
+        <div class="meta">Vidéo : série Osaekomi (Kodokan)</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=guJ-HlAKEA8">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=guJ-HlAKEA8">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="kami-shiho-gatame controle quatre coins haut immobilisation">
-        <div class="title"><h3><span class="jp">Kami‑shiho‑gatame</span> — Contrôle des quatre coins par le haut</h3></div>
-        <div class="meta">Vidéo : série Osaekomi (Kodokan)</div>
+        <div class="title"><h3><span class="jp">Kami-shiho-gatame</span> — Contrôle des quatre coins par le haut</h3></div>
+        <div class="meta">Vidéo : série Osaekomi (Kodokan)</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=KCDo1fEIFS0">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=KCDo1fEIFS0">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="yoko-shiho-gatame controle quatre coins cote immobilisation">
-        <div class="title"><h3><span class="jp">Yoko‑shiho‑gatame</span> — Contrôle des quatre coins par le côté</h3></div>
-        <div class="meta">Vidéo : série Osaekomi (Kodokan)</div>
+        <div class="title"><h3><span class="jp">Yoko-shiho-gatame</span> — Contrôle des quatre coins par le côté</h3></div>
+        <div class="meta">Vidéo : série Osaekomi (Kodokan)</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=KCDo1fEIFS0">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=KCDo1fEIFS0">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="tate-shiho-gatame controle quatre coins vertical immobilisation">
-        <div class="title"><h3><span class="jp">Tate‑shiho‑gatame</span> — Contrôle des quatre coins en position montée</h3></div>
-        <div class="meta">Vidéo : Kodokan demo</div>
+        <div class="title"><h3><span class="jp">Tate-shiho-gatame</span> — Contrôle des quatre coins en position montée</h3></div>
+        <div class="meta">Vidéo : Kodokan demo</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=55-rFmBx53g">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=55-rFmBx53g">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="ushiro-gesa-gatame controle lateral inverse immobilisation">
-        <div class="title"><h3><span class="jp">Ushiro‑gesa‑gatame</span> — Contrôle latéral inversé</h3></div>
-        <div class="meta">Vidéo : démonstration</div>
+        <div class="title"><h3><span class="jp">Ushiro-gesa-gatame</span> — Contrôle latéral inversé</h3></div>
+        <div class="meta">Vidéo : démonstration</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=SBapox2M2dE">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=SBapox2M2dE">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
@@ -375,39 +422,43 @@
   <!-- Group: Shime-waza -->
   <details class="group" open>
     <summary>
-      <span class="badge">Shime‑waza</span>
+      <span class="badge">Shime-waza</span>
       <span class="muted">Étranglements</span>
     </summary>
     <div class="grid">
       <article class="tile" data-tags="gyaku-juji-jime etranglement croise inverse ne-waza">
-        <div class="title"><h3><span class="jp">Gyaku‑juji‑jime</span> — Étranglement croisé inversé</h3></div>
-        <div class="meta">Vidéo : démo</div>
+        <div class="title"><h3><span class="jp">Gyaku-juji-jime</span> — Étranglement croisé inversé</h3></div>
+        <div class="meta">Vidéo : démo</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=y83rjTa5_1s">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=y83rjTa5_1s">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="hadaka-jime etranglement a mains nues ne-waza">
-        <div class="title"><h3><span class="jp">Hadaka‑jime</span> — Étranglement à mains nues</h3></div>
-        <div class="meta">Vidéo : Kodokan</div>
+        <div class="title"><h3><span class="jp">Hadaka-jime</span> — Étranglement à mains nues</h3></div>
+        <div class="meta">Vidéo : Kodokan</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=9f0n8jez7iA">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=9f0n8jez7iA">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="kata-juji-jime etranglement croise un cote ne-waza">
-        <div class="title"><h3><span class="jp">Kata‑juji‑jime</span> — Étranglement croisé d’un côté</h3></div>
-        <div class="meta">Vidéo : post Kodokan (Facebook)</div>
+        <div class="title"><h3><span class="jp">Kata-juji-jime</span> — Étranglement croisé d’un côté</h3></div>
+        <div class="meta">Vidéo : post Kodokan (Facebook)</div>
         <div class="actions">
           <a class="btn-small" target="_blank" href="https://www.facebook.com/kodokanjudoinstitute/videos/%E7%89%87%E5%8D%81%E5%AD%97%E7%B5%9E-kata-juji-jime/499055211505081/">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.facebook.com/kodokanjudoinstitute/videos/%E7%89%87%E5%8D%81%E5%AD%97%E7%B5%9E-kata-juji-jime/499055211505081/">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="nami-juji-jime etranglement croise normal ne-waza">
-        <div class="title"><h3><span class="jp">Nami‑juji‑jime</span> — Étranglement croisé normal</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Nami-juji-jime</span> — Étranglement croisé normal</h3></div>
+        <div class="meta">Vidéo : Kodokan</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Nami+juji+jime">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=k2cHry9HByQ">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=k2cHry9HByQ">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
@@ -417,23 +468,25 @@
   <!-- Group: Kansetsu-waza -->
   <details class="group" open>
     <summary>
-      <span class="badge">Kansetsu‑waza</span>
+      <span class="badge">Kansetsu-waza</span>
       <span class="muted">Clés de coude</span>
     </summary>
     <div class="grid">
       <article class="tile" data-tags="ude-hishigi-juji-gatame cle de bras en croix ne-waza armbar">
-        <div class="title"><h3><span class="jp">Ude‑hishigi‑juji‑gatame</span> — Clé de bras en croix</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Ude-hishigi-juji-gatame</span> — Clé de bras en croix</h3></div>
+        <div class="meta">Vidéo : Kodokan</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Ude+hishigi+juji+gatame">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=OWgSOlCuMXw">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=OWgSOlCuMXw">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
       <article class="tile" data-tags="ude-hishigi-ude-garami cle de bras enroulement ne-waza kimura">
-        <div class="title"><h3><span class="jp">Ude‑hishigi‑ude‑garami</span> — Clé de bras en enroulement</h3></div>
-        <div class="meta">Vidéo : à compléter</div>
+        <div class="title"><h3><span class="jp">Ude-hishigi-ude-garami</span> — Clé de bras en enroulement</h3></div>
+        <div class="meta">Vidéo : Kodokan</div>
         <div class="actions">
-          <a class="btn-small" target="_blank" href="https://www.youtube.com/results?search_query=Kodokan+Ude+hishigi+ude+garami">Chercher la vidéo</a>
+          <a class="btn-small" target="_blank" href="https://www.youtube.com/watch?v=SBf0aTma1VI">Ouvrir la vidéo</a>
+          <button class="btn-small" data-embed="https://www.youtube.com/watch?v=SBf0aTma1VI">Aperçu</button>
         </div>
         <label class="checkline"><input type="checkbox"/> Révisé</label>
       </article>
@@ -442,109 +495,111 @@
 
 </main>
 
+<!-- Modal vidéo -->
+<div id="videoModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="backdrop" data-close></div>
+  <div class="dialog" role="document">
+    <div class="head">
+      <strong>Lecture vidéo</strong>
+      <button class="close" type="button" data-close>Fermer ✕</button>
+    </div>
+    <div class="body">
+      <iframe class="frame" id="videoFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
 <footer>
-  <p>Fiche 1er Dan – style Kodokan • Filtre en direct • Cases « Révisé ». Besoin d'une version PDF/Excel ? Dis-moi et je te génère ça.</p>
+  <p>Fiche 1er Dan – style Kodokan • Filtre en direct • Cases « Révisé ». Besoin d'une version PDF/Excel ? Dis-moi et je te génère ça.</p>
 </footer>
 
 <script>
-    // — Officiel Kodokan × IJF Academy —
-    const OFFICIAL = {
-        // Koshi-waza
-        "O-goshi": "https://www.youtube.com/watch?v=yhu1mfy2vJ4",
-        "Tsurikomi-goshi": "https://www.youtube.com/watch?v=McfzA0yRVt4",
-        "Uki-goshi": "https://www.youtube.com/watch?v=bPKwtB4lyOQ",
-        // Te-waza
-        "Ippon-seoi-nage": "https://www.youtube.com/watch?v=FQnOlCxo4oI",
-        "Uki-otoshi": "https://www.youtube.com/watch?v=6H5tmncOY4Q",
-        "Tai-otoshi": "https://www.youtube.com/watch?v=4x6S3Q-Ktv8",
-        // Pas de vidéo “Morote-seoi-nage” dédiée sur la chaîne Kodokan :
-        // on renvoie vers Seoi-nage (référence officielle)
-        "Morote-seoi-nage": "https://www.youtube.com/watch?v=zIq0xI0ogxk",
-        // Ashi-waza
-        "Ko-soto-gari": "https://www.youtube.com/watch?v=jeQ541ScLB4",
-        "Ko-uchi-gari": "https://www.youtube.com/watch?v=3Jb3tZvr9Ng",
-        // Sutemi-waza
-        "Sumi-gaeshi": "https://www.youtube.com/watch?v=5VhduA5xkbA",
-        // Shime-waza
-        "Nami-juji-jime": "https://www.youtube.com/watch?v=k2cHry9HByQ",
-        // Kansetsu-waza
-        "Ude-hishigi-juji-gatame": "https://www.youtube.com/watch?v=OWgSOlCuMXw",
-        "Ude-hishigi-ude-garami": "https://www.youtube.com/watch?v=SBf0aTma1VI"
-    };
+    // Filtrage live
+    const q = document.getElementById('q');
+    const groups = Array.from(document.querySelectorAll('details.group'));
+    const tiles = Array.from(document.querySelectorAll('.tile'));
 
-    // Mets aussi les liens déjà présents pour homogénéiser
-    const PRESET = {
-        "Harai-goshi": "https://www.youtube.com/watch?v=qTo8HlAAkOo",
-        "Kubi-nage": "https://www.youtube.com/watch?v=ClkSYVSL50A",
-        "Koshi-guruma": "https://www.youtube.com/watch?v=SU7Id6uVJ44",
-        "Uchi-mata": "https://www.youtube.com/watch?v=iUpSu5J-bgw",
-        "Kata-guruma": "https://www.youtube.com/watch?v=g1C2E0g7yNw",
-        "De-ashi-barai": "https://www.youtube.com/watch?v=4BUUvqxi_Kk",
-        "Hiza-guruma": "https://www.youtube.com/watch?v=JPJx9-oAVns",
-        "Sasae-tsurikomi-ashi": "https://www.youtube.com/watch?v=699i--pvYmE",
-        "Okuri-ashi-barai": "https://www.youtube.com/watch?v=nw1ZdRjrdRI",
-        "O-soto-gari": "https://www.youtube.com/watch?v=c-A_nP7mKAc",
-        "Tomoe-nage": "https://www.youtube.com/watch?v=880WbHvHv6A",
-        "Hon-gesa-gatame": "https://www.youtube.com/watch?v=guJ-HlAKEA8",
-        "Kami-shiho-gatame": "https://www.youtube.com/watch?v=KCDo1fEIFS0",
-        "Yoko-shiho-gatame": "https://www.youtube.com/watch?v=KCDo1fEIFS0",
-        "Tate-shiho-gatame": "https://www.youtube.com/watch?v=55-rFmBx53g",
-        "Ushiro-gesa-gatame": "https://www.youtube.com/watch?v=SBapox2M2dE",
-        "Gyaku-juji-jime": "https://www.youtube.com/watch?v=y83rjTa5_1s",
-        "Hadaka-jime": "https://www.youtube.com/watch?v=9f0n8jez7iA",
-        "Kata-juji-jime": "https://www.youtube.com/watch?v=3VZVUAmiMD8"
-    };
-
-    const LINKS = {...PRESET, ...OFFICIAL};
-
-    // Normalisation rapide du texte (tirets, espaces fines, etc.)
-    const norm = s => (s||"")
-        .replace(/\u2011|\u2013|\u2014|\u2212/g, "-") // tirets
-        .replace(/\u00A0/g, " ") // espaces insécables
-        .replace(/\s+/g, " ")
-        .trim();
-
-    // Parcours des tuiles et mise à jour auto
-    document.querySelectorAll(".tile").forEach(tile => {
-        const jp = tile.querySelector(".title .jp");
-        if(!jp) return;
-        const key = norm(jp.textContent);
-        const url = LINKS[key];
-        if(!url) return;
-
-        // 1) Meta
-        const meta = tile.querySelector(".meta");
-        if (meta) meta.textContent = "Vidéo : Kodokan × IJF Academy";
-
-        // 2) Boutons d’action
-        const actions = tile.querySelector(".actions");
-        if (!actions) return;
-
-        // a) Premier bouton -> Ouvrir la vidéo (ou création si absent)
-        let openBtn = actions.querySelector('a.btn-small[href^="http"]');
-        if (!openBtn) {
-            openBtn = document.createElement("a");
-            openBtn.className = "btn-small";
-            openBtn.target = "_blank";
-            actions.prepend(openBtn);
-        }
-        openBtn.href = url;
-        openBtn.textContent = "Ouvrir la vidéo";
-
-        // b) Si un bouton “Chercher la vidéo” traîne, on le garde en 2e
-        // sinon on ajoute la recherche YouTube officielle
-        const hasSearch = [...actions.querySelectorAll("a.btn-small")]
-            .some(a => /Chercher/i.test(a.textContent));
-        if (!hasSearch) {
-            const search = document.createElement("a");
-            search.className = "btn-small";
-            search.target = "_blank";
-            const q = encodeURIComponent(`Kodokan ${key.replaceAll("-","-").replaceAll(" ", "+")}`);
-            search.href = `https://www.youtube.com/results?search_query=${q}`;
-            search.textContent = "Chercher d'autres sources";
-            actions.appendChild(search);
-        }
+    q.addEventListener('input', () => {
+        const v = q.value.trim().toLowerCase();
+        tiles.forEach(tile => {
+            const hay = (tile.textContent + ' ' + (tile.getAttribute('data-tags') || '')).toLowerCase();
+            tile.style.display = hay.includes(v) ? '' : 'none';
+        });
     });
+
+    // Tout ouvrir / fermer
+    const toggleBtn = document.getElementById('toggleOpen');
+    let allOpen = true;
+    toggleBtn.addEventListener('click', () => {
+        allOpen = !allOpen;
+        groups.forEach(g => g.open = allOpen);
+        toggleBtn.textContent = allOpen ? 'Tout fermer' : 'Tout ouvrir';
+    });
+
+    // ===== Modale vidéo (iframe)
+    (function modalVideo(){
+        const modal = document.getElementById('videoModal');
+        const iframe = document.getElementById('videoFrame');
+
+        function toEmbed(url){
+            if(!url) return '';
+            try{
+                const u = new URL(url);
+                const host = u.hostname;
+                if(host.includes('youtu.be')){ // short links
+                    const id = u.pathname.split('/').filter(Boolean)[0];
+                    return id ? `https://www.youtube.com/embed/${id}?autoplay=1` : '';
+                }
+                if(host.includes('youtube.com')){
+                    if(u.pathname.startsWith('/shorts/')){
+                        const id = u.pathname.split('/').filter(Boolean)[1];
+                        return id ? `https://www.youtube.com/embed/${id}?autoplay=1` : '';
+                    }
+                    const id = u.searchParams.get('v');
+                    if(id) return `https://www.youtube.com/embed/${id}?autoplay=1`;
+                    if(u.pathname.startsWith('/embed/')) return url;
+                }
+                return url;
+            }catch{ return url; }
+        }
+
+        function openModal(url){
+            const src = toEmbed(url);
+            if(!src) return;
+            iframe.src = src;
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden','false');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(){
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden','true');
+            iframe.src = '';
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('click', (e)=>{
+            // Bouton "Aperçu"
+            const btn = e.target.closest('button[data-embed]');
+            if(btn){
+                e.preventDefault();
+                const url = btn.getAttribute('data-embed') || '';
+                openModal(url);
+                return;
+            }
+            // Clique backdrop / bouton Fermer
+            if(e.target.closest('[data-close]') || e.target.classList.contains('backdrop')) closeModal();
+        });
+        window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+
+        // Bonus: transformer "Ouvrir la vidéo" en clic modal si YouTube
+        document.querySelectorAll('.actions a.btn-small[href^="http"]').forEach(a=>{
+            const href = a.getAttribute('href')||'';
+            if(/youtube\.com|youtu\.be/.test(href)){
+                a.addEventListener('click',(ev)=>{ ev.preventDefault(); openModal(href); });
+            }
+        });
+    })();
 </script>
 </body>
 </html>
