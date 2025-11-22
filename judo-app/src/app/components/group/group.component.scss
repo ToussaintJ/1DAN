@@ -1,0 +1,44 @@
+.group {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.group[open] summary {
+  border-bottom: 1px solid var(--border);
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+summary .muted {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  padding: 14px;
+}
+
+@media (min-width: 700px) {
+  .grid > * {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid > * {
+    grid-column: span 4;
+  }
+}

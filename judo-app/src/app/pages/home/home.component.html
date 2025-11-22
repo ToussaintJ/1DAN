@@ -1,0 +1,21 @@
+<div class="page">
+  <app-header></app-header>
+  <app-toolbar (queryChange)="onQueryChange($event)" (toggleAll)="onToggleAll()"></app-toolbar>
+
+  <section class="content container">
+    <ng-container *ngIf="filteredGroups().length; else empty">
+      <app-group-list
+        [groups]="filteredGroups()"
+        [openState]="openState()"
+        (openChange)="onOpenChange($event)"
+        (previewVideo)="openPreview($event)"
+      ></app-group-list>
+    </ng-container>
+    <ng-template #empty>
+      <div class="empty">
+        <p>Aucune technique trouvée pour cette recherche.</p>
+      </div>
+    </ng-template>
+  </section>
+</div>
+<app-video-modal></app-video-modal>

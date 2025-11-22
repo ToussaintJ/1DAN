@@ -1,0 +1,13 @@
+<details class="group" [attr.open]="open ? '' : null" (toggle)="onToggle($event)">
+  <summary>
+    <span class="badge">{{ group.label }}</span>
+    <span class="muted">{{ group.description }}</span>
+  </summary>
+  <div class="grid">
+    <app-tile
+      *ngFor="let technique of group.techniques"
+      [technique]="technique"
+      (preview)="previewVideo.emit($event)"
+    ></app-tile>
+  </div>
+</details>
