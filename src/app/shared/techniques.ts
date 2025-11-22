@@ -28,9 +28,9 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Kubi-nage",
         "translation": "Projection par la nuque",
-        "meta": "Vidéo : demo (Neck Throw)",
-        "videoUrl": "https://www.youtube.com/watch?v=ClkSYVSL50A",
-        "embedUrl": "https://www.youtube.com/watch?v=ClkSYVSL50A",
+        "meta": "Vidéo : KODOKAN MILANO",
+        "videoUrl": "https://www.youtube.com/watch?v=7zCgLqa1VbI",
+        "embedUrl": "https://www.youtube.com/watch?v=7zCgLqa1VbI",
         "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Kubi+nage"
       },
       {
@@ -414,7 +414,7 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Ushiro-gesa-gatame",
         "translation": "Contrôle latéral inversé",
-        "meta": "Vidéo : démonstration",
+        "meta": "Vidéo : Kodokan demo",
         "videoUrl": "https://www.youtube.com/watch?v=SBapox2M2dE",
         "embedUrl": "https://www.youtube.com/watch?v=SBapox2M2dE"
       }
@@ -436,8 +436,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "name": "Gyaku-juji-jime",
         "translation": "Étranglement croisé inversé",
         "meta": "Vidéo : démo",
-        "videoUrl": "https://www.youtube.com/watch?v=y83rjTa5_1s",
-        "embedUrl": "https://www.youtube.com/watch?v=y83rjTa5_1s"
+        "videoUrl": "https://www.youtube.com/watch?v=t3tQriIPdlI",
+        "embedUrl": "https://www.youtube.com/watch?v=t3tQriIPdlI"
       },
       {
         "tags": [
@@ -465,9 +465,9 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Kata-juji-jime",
         "translation": "Étranglement croisé d’un côté",
-        "meta": "Vidéo : post Kodokan (Facebook)",
-        "videoUrl": "https://www.facebook.com/kodokanjudoinstitute/videos/%E7%89%87%E5%8D%81%E5%AD%97%E7%B5%9E-kata-juji-jime/499055211505081/",
-        "embedUrl": "https://www.facebook.com/kodokanjudoinstitute/videos/%E7%89%87%E5%8D%81%E5%AD%97%E7%B5%9E-kata-juji-jime/499055211505081/"
+        "meta": "Vidéo : Kodokan",
+        "videoUrl": "https://www.youtube.com/watch?v=3VZVUAmiMD8",
+        "embedUrl": "https://www.youtube.com/watch?v=3VZVUAmiMD8"
       },
       {
         "tags": [
