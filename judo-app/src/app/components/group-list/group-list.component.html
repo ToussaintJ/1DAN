@@ -1,0 +1,9 @@
+<section>
+  <app-group
+    *ngFor="let group of groups"
+    [group]="group"
+    [open]="openState[group.id]"
+    (openChange)="openChange.emit($event)"
+    (previewVideo)="previewVideo.emit($event)"
+  ></app-group>
+</section>

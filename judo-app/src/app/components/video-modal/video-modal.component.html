@@ -1,0 +1,12 @@
+<div class="modal" [class.open]="state.open" *ngIf="modal.state$ | async as state">
+  <div class="backdrop" (click)="close()" aria-hidden="true"></div>
+  <div class="dialog" role="dialog" aria-modal="true" aria-label="Prévisualisation vidéo">
+    <div class="head">
+      <span>Prévisualisation</span>
+      <button class="close" type="button" (click)="close()" aria-label="Fermer la fenêtre">Fermer</button>
+    </div>
+    <div class="body">
+      <iframe *ngIf="state.url" class="frame" [src]="safe(state.url)" title="Vidéo" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
