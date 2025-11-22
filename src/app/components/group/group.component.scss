@@ -26,19 +26,22 @@ summary .muted {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 12px;
   padding: 14px;
 }
 
-@media (min-width: 700px) {
-  .grid > * {
-    grid-column: span 6;
+@media (max-width: 720px) {
+  .grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 14px 14px 14px 10px;
+    scroll-snap-type: x mandatory;
   }
-}
 
-@media (min-width: 1000px) {
   .grid > * {
-    grid-column: span 4;
+    flex: 0 0 88%;
+    scroll-snap-align: start;
   }
 }
