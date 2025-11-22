@@ -1,6 +1,12 @@
 <div class="page">
   <app-header></app-header>
-  <app-toolbar (queryChange)="onQueryChange($event)" (toggleAll)="onToggleAll()"></app-toolbar>
+  <app-toolbar
+    [danOptions]="danOptions"
+    [selectedDan]="selectedDan()"
+    (queryChange)="onQueryChange($event)"
+    (danChange)="onDanChange($event)"
+    (toggleAll)="onToggleAll()"
+  ></app-toolbar>
 
   <section class="content container">
     <ng-container *ngIf="filteredGroups().length; else empty">

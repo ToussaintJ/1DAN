@@ -16,7 +16,8 @@
       Chercher d'autres sources
     </a>
   </div>
-  <div class="chips" *ngIf="technique.tags?.length">
+  <div class="chips" *ngIf="technique.dan || technique.tags?.length">
+    <span class="chip dan">{{ technique.dan }}</span>
     <span class="chip" *ngFor="let tag of technique.tags">{{ tag }}</span>
   </div>
   <label class="checkline">
