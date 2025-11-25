@@ -127,9 +127,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Hane-goshi",
         "translation": "Hanche à ressort",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Hane+goshi",
+        "videoUrl": "https://www.youtube.com/watch?v=M9_7De6A1kk",
+        "embedUrl": "https://www.youtube.com/embed/M9_7De6A1kk",
         "searchUrl": "https://www.youtube.com/results?search_query=Hane+goshi"
       },
       {
@@ -142,9 +143,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Sode-tsurikomi-goshi",
         "translation": "Hanche avec traction par la manche",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Sode+tsurikomi+goshi",
+        "videoUrl": "https://www.youtube.com/watch?v=CkFAFbXgRM4",
+        "embedUrl": "https://www.youtube.com/embed/CkFAFbXgRM4",
         "searchUrl": "https://www.youtube.com/results?search_query=Sode+tsurikomi+goshi"
       },
       {
@@ -156,9 +158,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Tsuri-goshi",
         "translation": "Hanche relevée",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Tsuri+goshi",
+        "videoUrl": "https://www.youtube.com/watch?v=51Htlp7xEvE",
+        "embedUrl": "https://www.youtube.com/embed/51Htlp7xEvE",
         "searchUrl": "https://www.youtube.com/results?search_query=Tsuri+goshi"
       },
       {
@@ -170,9 +173,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Utsuri-goshi",
         "translation": "Transfert de hanche",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Utsuri+goshi",
+        "videoUrl": "https://www.youtube.com/watch?v=4pQd_bEnlf0",
+        "embedUrl": "https://www.youtube.com/embed/4pQd_bEnlf0",
         "searchUrl": "https://www.youtube.com/results?search_query=Utsuri+goshi"
       },
       {
@@ -184,9 +188,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Ushiro-goshi",
         "translation": "Hanche arrière",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ushiro+goshi",
+        "videoUrl": "https://www.youtube.com/watch?v=ORIYstuxYT8",
+        "embedUrl": "https://www.youtube.com/embed/ORIYstuxYT8",
         "searchUrl": "https://www.youtube.com/results?search_query=Ushiro+goshi"
       }
     ],
@@ -226,8 +231,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Roue autour des épaules",
         "meta": "Vidéo : Kodokan × IJF Academy",
         "dan": "1er dan",
-        "videoUrl": "https://www.youtube.com/watch?v=g1C2E0g7yNw",
-        "embedUrl": "https://www.youtube.com/watch?v=g1C2E0g7yNw",
+        "videoUrl": "https://www.youtube.com/watch?v=cnHRhSy8yi4",
+        "embedUrl": "https://www.youtube.com/watch?v=cnHRhSy8yi4",
         "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Kata+guruma"
       },
       {
@@ -278,8 +283,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Projection par l'épaule (à deux mains)",
         "meta": "Vidéo : Réf. Seoi-nage (Kodokan)",
         "dan": "1er dan",
-        "videoUrl": "https://www.youtube.com/watch?v=zIq0xI0ogxk",
-        "embedUrl": "https://www.youtube.com/watch?v=zIq0xI0ogxk",
+        "videoUrl": "https://www.youtube.com/watch?v=UjtL1h9htb8",
+        "embedUrl": "https://www.youtube.com/watch?v=UjtL1h9htb8",
         "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Morote+Seoi+Nage"
       },
       {
@@ -292,9 +297,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Eri-seoi-nage",
         "translation": "Projection par l'épaule en saisissant le col",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Eri Seoi Nage (Go JUDO Go!)",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Eri+seoi+nage",
+        "videoUrl": "https://www.youtube.com/watch?v=L1deOa7c5Jo",
+        "embedUrl": "https://www.youtube.com/watch?v=L1deOa7c5Jo",
         "searchUrl": "https://www.youtube.com/results?search_query=Eri+seoi+nage"
       },
       {
@@ -308,8 +314,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Roue réalisée avec les mains",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Te+guruma",
-        "searchUrl": "https://www.youtube.com/results?search_query=Te+guruma"
+        "videoUrl": "https://www.youtube.com/watch?v=i1vdi8hEAPU",
+        "searchUrl": "https://www.youtube.com/watch?v=i1vdi8hEAPU"
       },
       {
         "tags": [
@@ -320,9 +326,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Morote-gari",
         "translation": "Ramassage à deux mains",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Morote+gari",
+        "videoUrl": "https://www.youtube.com/watch?v=BHLQS4K85bs",
+        "embedUrl": "https://www.youtube.com/watch?v=BHLQS4K85bs",
         "searchUrl": "https://www.youtube.com/results?search_query=Morote+gari"
       },
       {
@@ -334,9 +341,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Kuchiki-taoshi",
         "translation": "Abattage sur jambe saisie",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kuchiki+taoshi",
+        "videoUrl": "https://www.youtube.com/watch?v=ZNL47q1aJNY",
+        "embedUrl": "https://www.youtube.com/embed/ZNL47q1aJNY",
         "searchUrl": "https://www.youtube.com/results?search_query=Kuchiki+taoshi"
       },
       {
@@ -348,9 +356,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Sumi-otoshi",
         "translation": "Chute de coin",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Sumi+otoshi",
+        "videoUrl": "https://www.youtube.com/watch?v=lLU9wv52ni0",
+        "embedUrl": "https://www.youtube.com/embed/lLU9wv52ni0",
         "searchUrl": "https://www.youtube.com/results?search_query=Sumi+otoshi"
       },
       {
@@ -362,9 +371,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Kibisu-gaeshi",
         "translation": "Contre sur le talon",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kibisu+gaeshi",
+        "videoUrl": "https://www.youtube.com/watch?v=tJylJYfBliA",
+        "embedUrl": "https://www.youtube.com/embed/tJylJYfBliA",
         "searchUrl": "https://www.youtube.com/results?search_query=Kibisu+gaeshi"
       },
       {
@@ -376,9 +386,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Uchi-mata-sukashi",
         "translation": "Esquive d'uchi-mata",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Uchi+mata+sukashi",
+        "videoUrl": "https://www.youtube.com/watch?v=V-RS3uhtVWM",
+        "embedUrl": "https://www.youtube.com/embed/V-RS3uhtVWM",
         "searchUrl": "https://www.youtube.com/results?search_query=Uchi+mata+sukashi"
       },
       {
@@ -390,9 +401,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Sukui-nage",
         "translation": "Projection en soulevant",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Sukui+nage",
+        "videoUrl": "https://www.youtube.com/watch?v=vU6aJ2kFxoI",
+        "embedUrl": "https://www.youtube.com/embed/vU6aJ2kFxoI",
         "searchUrl": "https://www.youtube.com/results?search_query=Sukui+nage"
       },
       {
@@ -404,9 +416,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Yama-arashi",
         "translation": "Tempête de montagne",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Yama+arashi",
+        "videoUrl": "https://www.youtube.com/watch?v=MGlyKmSuzdc",
+        "embedUrl": "https://www.youtube.com/embed/MGlyKmSuzdc",
         "searchUrl": "https://www.youtube.com/results?search_query=Yama+arashi"
       },
       {
@@ -418,9 +431,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Seoi-otoshi",
         "translation": "Chute sur l'épaule",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Seoi+otoshi",
+        "videoUrl": "https://www.youtube.com/watch?v=vu1TMVNnq34",
+        "embedUrl": "https://www.youtube.com/embed/vu1TMVNnq34",
         "searchUrl": "https://www.youtube.com/results?search_query=Seoi+otoshi"
       }
     ],
@@ -545,9 +559,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "O-guruma",
         "translation": "Grande roue",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=O+guruma",
+        "videoUrl": "https://www.youtube.com/watch?v=SnZciTAY9vc",
+        "embedUrl": "https://www.youtube.com/embed/SnZciTAY9vc",
         "searchUrl": "https://www.youtube.com/results?search_query=O+guruma"
       },
       {
@@ -559,9 +574,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Ashi-guruma",
         "translation": "Roue avec la jambe",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ashi+guruma",
+        "videoUrl": "https://www.youtube.com/watch?v=ROeayhvom9U",
+        "embedUrl": "https://www.youtube.com/embed/ROeayhvom9U",
         "searchUrl": "https://www.youtube.com/results?search_query=Ashi+guruma"
       },
       {
@@ -573,9 +589,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Ko-soto-gake",
         "translation": "Petit accrochage extérieur",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ko+soto+gake",
+        "videoUrl": "https://www.youtube.com/watch?v=8b6kY4s4zH4",
+        "embedUrl": "https://www.youtube.com/embed/8b6kY4s4zH4",
         "searchUrl": "https://www.youtube.com/results?search_query=Ko+soto+gake"
       },
       {
@@ -587,9 +604,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "O-soto-otoshi",
         "translation": "Chute extérieure",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=O+soto+otoshi",
+        "videoUrl": "https://www.youtube.com/watch?v=2DsVvDw7b8g",
+        "embedUrl": "https://www.youtube.com/embed/2DsVvDw7b8g",
         "searchUrl": "https://www.youtube.com/results?search_query=O+soto+otoshi"
       },
       {
@@ -601,9 +619,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Tsubame-gaeshi",
         "translation": "Contre de l'hirondelle",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Tsubame+gaeshi",
+        "videoUrl": "https://www.youtube.com/watch?v=GwweWqqFB5g",
+        "embedUrl": "https://www.youtube.com/embed/GwweWqqFB5g",
         "searchUrl": "https://www.youtube.com/results?search_query=Tsubame+gaeshi"
       },
       {
@@ -615,9 +634,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Harai-tsurikomi-ashi",
         "translation": "Balayage avec traction",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Harai+tsurikomi+ashi",
+        "videoUrl": "https://www.youtube.com/watch?v=gGPXvWL8VbE",
+        "embedUrl": "https://www.youtube.com/embed/gGPXvWL8VbE",
         "searchUrl": "https://www.youtube.com/results?search_query=Harai+tsurikomi+ashi"
       },
       {
@@ -629,9 +649,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "O-soto-guruma",
         "translation": "Grande roue extérieure",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=O+soto+guruma",
+        "videoUrl": "https://www.youtube.com/watch?v=92KbCm6pQeI",
+        "embedUrl": "https://www.youtube.com/embed/92KbCm6pQeI",
         "searchUrl": "https://www.youtube.com/results?search_query=O+soto+guruma"
       },
       {
@@ -643,9 +664,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "O-soto-gaeshi",
         "translation": "Contre de o-soto-gari",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=O+soto+gaeshi",
+        "videoUrl": "https://www.youtube.com/watch?v=8ZjM3X_EANo",
+        "embedUrl": "https://www.youtube.com/embed/8ZjM3X_EANo",
         "searchUrl": "https://www.youtube.com/results?search_query=O+soto+gaeshi"
       }
     ],
@@ -693,9 +715,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Ura-nage",
         "translation": "Projection arrière",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ura+nage",
+        "videoUrl": "https://www.youtube.com/watch?v=Fgi9b8DJ5sQ",
+        "embedUrl": "https://www.youtube.com/embed/Fgi9b8DJ5sQ",
         "searchUrl": "https://www.youtube.com/results?search_query=Ura+nage"
       },
       {
@@ -709,8 +732,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Chute dans le vallon",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Tani+otoshi",
-        "searchUrl": "https://www.youtube.com/results?search_query=Tani+otoshi"
+        "videoUrl": "https://www.youtube.com/watch?v=3b9Me3Fohpk",
+        "searchUrl": "https://www.youtube.com/watch?v=3b9Me3Fohpk"
       },
       {
         "tags": [
@@ -723,8 +746,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Roue latérale",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Yoko+guruma",
-        "searchUrl": "https://www.youtube.com/results?search_query=Yoko+guruma"
+        "videoUrl": "https://www.youtube.com/watch?v=MehP6I5cY2c",
+        "searchUrl": "https://www.youtube.com/watch?v=MehP6I5cY2c"
       },
       {
         "tags": [
@@ -737,8 +760,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Accrochage latéral",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Yoko+gake",
-        "searchUrl": "https://www.youtube.com/results?search_query=Yoko+gake"
+        "videoUrl": "https://www.youtube.com/watch?v=tP1Sj1uDfSo",
+        "searchUrl": "https://www.youtube.com/watch?v=tP1Sj1uDfSo"
       },
       {
         "tags": [
@@ -749,9 +772,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Ko-uchi-makikomi",
         "translation": "Enroulement intérieur",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ko+uchi+makikomi",
+        "videoUrl": "https://www.youtube.com/watch?v=_1eygIXLD_w",
+        "embedUrl": "https://www.youtube.com/embed/_1eygIXLD_w",
         "searchUrl": "https://www.youtube.com/results?search_query=Ko+uchi+makikomi"
       },
       {
@@ -765,8 +789,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Projection circulaire latérale",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Yoko+tomo+nage",
-        "searchUrl": "https://www.youtube.com/results?search_query=Yoko+tomo+nage"
+        "videoUrl": "https://www.youtube.com/watch?v=9-byceOifXo",
+        "searchUrl": "https://www.youtube.com/watch?v=9-byceOifXo"
       },
       {
         "tags": [
@@ -779,8 +803,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Technique flottante",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Uki+waza",
-        "searchUrl": "https://www.youtube.com/results?search_query=Uki+waza"
+        "videoUrl": "https://www.youtube.com/watch?v=weVOpJ63gII",
+        "searchUrl": "https://www.youtube.com/watch?v=weVOpJ63gII"
       },
       {
         "tags": [
@@ -793,8 +817,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Enroulement extérieur",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Soto+makikomi",
-        "searchUrl": "https://www.youtube.com/results?search_query=Soto+makikomi"
+        "videoUrl": "https://www.youtube.com/watch?v=bWG9O1BVKtQ",
+        "searchUrl": "https://www.youtube.com/watch?v=bWG9O1BVKtQ"
       },
       {
         "tags": [
@@ -807,8 +831,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Enroulement avec balayage",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Harai+makikomi",
-        "searchUrl": "https://www.youtube.com/results?search_query=Harai+makikomi"
+        "videoUrl": "https://www.youtube.com/watch?v=VBaHzKaCXss",
+        "searchUrl": "https://www.youtube.com/watch?v=VBaHzKaCXss"
       },
       {
         "tags": [
@@ -821,8 +845,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Séparation latérale",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Yoko+wakare",
-        "searchUrl": "https://www.youtube.com/results?search_query=Yoko+wakare"
+        "videoUrl": "https://www.youtube.com/watch?v=bp1tscHlePI",
+        "searchUrl": "https://www.youtube.com/watch?v=bp1tscHlePI"
       },
       {
         "tags": [
@@ -835,8 +859,9 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Chute latérale",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Yoko+otoshi",
-        "searchUrl": "https://www.youtube.com/results?search_query=Yoko+otoshi"
+        "videoUrl": "https://www.youtube.com/watch?v=MnNG67pF_a0",
+        "embedUrl": "https://www.youtube.com/embed/MnNG67pF_a0",
+        "searchUrl": "https://www.youtube.com/watch?v=MnNG67pF_a0"
       },
       {
         "tags": [
@@ -847,9 +872,10 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         ],
         "name": "Tawara-gaeshi",
         "translation": "Renversement du ballot",
-        "meta": "Vidéo : recherche recommandée",
+        "meta": "Vidéo : Kodokan",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Tawara+gaeshi",
+        "videoUrl": "https://www.youtube.com/watch?v=TmTWgrmViZc",
+        "embedUrl": "https://www.youtube.com/embed/TmTWgrmViZc",
         "searchUrl": "https://www.youtube.com/results?search_query=Tawara+gaeshi"
       },
       {
@@ -863,7 +889,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Séparation en portant",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Daki+wakare",
+        "videoUrl": "https://www.youtube.com/watch?v=Hr0cOMGBDYo",
+        "embedUrl": "https://www.youtube.com/embed/Hr0cOMGBDYo",
         "searchUrl": "https://www.youtube.com/results?search_query=Daki+wakare"
       }
     ],
@@ -885,8 +912,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle fondamental latéral",
         "meta": "Vidéo : série Osaekomi (Kodokan)",
         "dan": "1er dan",
-        "videoUrl": "https://www.youtube.com/watch?v=guJ-HlAKEA8",
-        "embedUrl": "https://www.youtube.com/watch?v=guJ-HlAKEA8"
+        "videoUrl": "https://www.youtube.com/watch?v=NDaQuJOFBYk",
+        "embedUrl": "https://www.youtube.com/watch?v=NDaQuJOFBYk"
       },
       {
         "tags": [
@@ -901,8 +928,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle des quatre coins par le haut",
         "meta": "Vidéo : série Osaekomi (Kodokan)",
         "dan": "1er dan",
-        "videoUrl": "https://www.youtube.com/watch?v=KCDo1fEIFS0",
-        "embedUrl": "https://www.youtube.com/watch?v=KCDo1fEIFS0"
+        "videoUrl": "https://www.youtube.com/watch?v=HFuMjOv0WN8",
+        "embedUrl": "https://www.youtube.com/watch?v=HFuMjOv0WN8"
       },
       {
         "tags": [
@@ -917,8 +944,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle des quatre coins par le côté",
         "meta": "Vidéo : série Osaekomi (Kodokan)",
         "dan": "1er dan",
-        "videoUrl": "https://www.youtube.com/watch?v=KCDo1fEIFS0",
-        "embedUrl": "https://www.youtube.com/watch?v=KCDo1fEIFS0"
+        "videoUrl": "https://www.youtube.com/watch?v=TT7XJVSEQxA",
+        "embedUrl": "https://www.youtube.com/watch?v=TT7XJVSEQxA"
       },
       {
         "tags": [
@@ -965,7 +992,7 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle des quatre coins par le haut (variation)",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kuzure+kami+shiho+gatame",
+        "videoUrl": "https://www.youtube.com/watch?v=YUrogQWdwiY",
         "searchUrl": "https://www.youtube.com/results?search_query=Kuzure+kami+shiho+gatame"
       },
       {
@@ -980,7 +1007,7 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle latéral (variation)",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kuzure+gesa+gatame",
+        "videoUrl": "https://www.youtube.com/watch?v=Q2fb9jaoUFQ",
         "searchUrl": "https://www.youtube.com/results?search_query=Kuzure+gesa+gatame"
       },
       {
@@ -997,8 +1024,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle vertical (variation)",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kuzure+tate+shiho+gatame",
-        "searchUrl": "https://www.youtube.com/results?search_query=Kuzure+tate+shiho+gatame"
+        "videoUrl": "https://www.youtube.com/watch?v=i9VUQhqxYJU",
+        "searchUrl": "https://www.youtube.com/watch?v=i9VUQhqxYJU"
       },
       {
         "tags": [
@@ -1014,8 +1041,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle des quatre coins latéral (variation)",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kuzure+yoko+shiho+gatame",
-        "searchUrl": "https://www.youtube.com/results?search_query=Kuzure+yoko+shiho+gatame"
+        "videoUrl": "https://www.youtube.com/watch?v=BzA9mEs_xdk",
+        "searchUrl": "https://www.youtube.com/watch?v=BzA9mEs_xdk"
       },
       {
         "tags": [
@@ -1029,8 +1056,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle latéral en oreiller",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Makura+gesa+gatame",
-        "searchUrl": "https://www.youtube.com/results?search_query=Makura+gesa+gatame"
+        "videoUrl": "https://www.youtube.com/watch?v=k9MYaHbYqnQ",
+        "searchUrl": "https://www.youtube.com/watch?v=k9MYaHbYqnQ"
       },
       {
         "tags": [
@@ -1043,7 +1070,7 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Contrôle par l'épaule",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kata+gatame",
+        "videoUrl": "https://www.youtube.com/watch?v=zQR3IOXxO_Q",
         "searchUrl": "https://www.youtube.com/results?search_query=Kata+gatame"
       }
     ],
@@ -1126,8 +1153,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Étranglement en contrôlant le col",
         "meta": "Vidéo : recherche recommandée",
         "dan": "1er dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Okuri+eri+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Okuri+eri+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=EiqyoVcIAi8",
+        "searchUrl": "https://www.youtube.com/watch?v=EiqyoVcIAi8"
       },
       {
         "tags": [
@@ -1140,8 +1167,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Étranglement en triangle",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Sankaku+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Sankaku+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=lq1CUBRAm7s",
+        "searchUrl": "https://www.youtube.com/watch?v=lq1CUBRAm7s"
       },
       {
         "tags": [
@@ -1151,11 +1178,11 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
           "ne-waza"
         ],
         "name": "Kata-ha-jime",
-        "translation": "Étranglement avec un bras", 
+        "translation": "Étranglement avec un bras",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kata+ha+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Kata+ha+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=yaTGgRjnwB8",
+        "searchUrl": "https://www.youtube.com/watch?v=yaTGgRjnwB8"
       },
       {
         "tags": [
@@ -1168,8 +1195,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Étranglement à une main",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Kata+te+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Kata+te+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=cHeIs-fSqwE",
+        "searchUrl": "https://www.youtube.com/watch?v=cHeIs-fSqwE"
       },
       {
         "tags": [
@@ -1182,8 +1209,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Étranglement en enroulant la manche",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Sode+guruma+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Sode+guruma+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=E3nvQzClcAU",
+        "searchUrl": "https://www.youtube.com/watch?v=E3nvQzClcAU"
       },
       {
         "tags": [
@@ -1196,8 +1223,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Étranglement aux deux mains",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Morote+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Morote+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=VbW71vPdZmg",
+        "searchUrl": "https://www.youtube.com/watch?v=VbW71vPdZmg"
       },
       {
         "tags": [
@@ -1210,8 +1237,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Étranglement en poussant",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Tsukkomi+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Tsukkomi+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=dKKpnD3eLcY",
+        "searchUrl": "https://www.youtube.com/watch?v=dKKpnD3eLcY"
       },
       {
         "tags": [
@@ -1224,8 +1251,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Étranglement avec contrôle de la jambe",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ashi+gatame+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Ashi+gatame+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=VpRamO8vKYY",
+        "searchUrl": "https://www.youtube.com/watch?v=VpRamO8vKYY"
       },
       {
         "tags": [
@@ -1238,8 +1265,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Étranglement avec les deux mains",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ryo+te+jime",
-        "searchUrl": "https://www.youtube.com/results?search_query=Ryo+te+jime"
+        "videoUrl": "https://www.youtube.com/watch?v=-RHC4V7TQiY",
+        "searchUrl": "https://www.youtube.com/watch?v=-RHC4V7TQiY"
       }
     ],
     "id": "shime-waza",
@@ -1295,8 +1322,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Clé de bras en torsion",
         "meta": "Vidéo : recherche recommandée",
         "dan": "1er dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ude+garami",
-        "searchUrl": "https://www.youtube.com/results?search_query=Ude+garami"
+        "videoUrl": "https://www.youtube.com/watch?v=AIlTvZb4RlE",
+        "searchUrl": "https://www.youtube.com/watch?v=AIlTvZb4RlE"
       },
       {
         "tags": [
@@ -1310,8 +1337,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Clé de coude avec le genou",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+hiza+gatame",
-        "searchUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+hiza+gatame"
+        "videoUrl": "https://www.youtube.com/watch?v=H2HtAJdiJcE",
+        "searchUrl": "https://www.youtube.com/watch?v=H2HtAJdiJcE"
       },
       {
         "tags": [
@@ -1325,8 +1352,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Clé de coude sous l'aisselle",
         "meta": "Vidéo : recherche recommandée",
         "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+waki+gatame",
-        "searchUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+waki+gatame"
+        "videoUrl": "https://www.youtube.com/watch?v=8F5p1zuJRG0",
+        "searchUrl": "https://www.youtube.com/watch?v=8F5p1zuJRG0"
       },
       {
         "tags": [
@@ -1353,8 +1380,8 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Clé de bras en triangle",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+sankaku+gatame",
-        "searchUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+sankaku+gatame"
+        "videoUrl": "https://www.youtube.com/watch?v=ClY7g_pX-4s",
+        "searchUrl": "https://www.youtube.com/watch?v=ClY7g_pX-4s"
       },
       {
         "tags": [
@@ -1367,45 +1394,11 @@ export const TECHNIQUE_GROUPS: TechniqueGroup[] = [
         "translation": "Clé de bras au ventre",
         "meta": "Vidéo : recherche recommandée",
         "dan": "3e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+hara+gatame",
-        "searchUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+hara+gatame"
+        "videoUrl": "https://www.youtube.com/watch?v=ZzEycg8R_9M",
+        "searchUrl": "https://www.youtube.com/watch?v=ZzEycg8R_9M"
       }
     ],
     "id": "kansetsu-waza",
     "label": "Kansetsu-waza"
-  },
-  {
-    "description": "Défense judo / ju-jitsu",
-    "techniques": [
-      {
-        "tags": [
-          "defense",
-          "serie",
-          "a",
-          "b"
-        ],
-        "name": "Séries A et B",
-        "translation": "Défense judo / ju-jitsu (séries A et B)",
-        "meta": "Vidéo : recherche recommandée",
-        "dan": "1er dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=defense+judo+ju+jitsu+serie+A+B",
-        "searchUrl": "https://www.youtube.com/results?search_query=defense+judo+ju+jitsu+serie+A+B"
-      },
-      {
-        "tags": [
-          "defense",
-          "serie",
-          "c"
-        ],
-        "name": "Série C",
-        "translation": "Défense judo / ju-jitsu (série C)",
-        "meta": "Vidéo : recherche recommandée",
-        "dan": "2e dan",
-        "videoUrl": "https://www.youtube.com/results?search_query=defense+judo+ju+jitsu+serie+C",
-        "searchUrl": "https://www.youtube.com/results?search_query=defense+judo+ju+jitsu+serie+C"
-      }
-    ],
-    "id": "defense",
-    "label": "Défense"
   }
 ];
