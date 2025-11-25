@@ -6,5 +6,12 @@
     </svg>
     <input type="search" [formControl]="searchControl" placeholder="Rechercher (ex: uchi, hanche, étranglement, …)" />
   </label>
+  <label class="select">
+    <span>Filtrer par dan</span>
+    <select [formControl]="danControl">
+      <option value="all">Tous les dans</option>
+      <option *ngFor="let dan of danOptions" [value]="dan">{{ dan }}</option>
+    </select>
+  </label>
   <button class="btn" type="button" (click)="toggleAll.emit()">Tout ouvrir / fermer</button>
 </div>

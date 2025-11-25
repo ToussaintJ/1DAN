@@ -11,6 +11,7 @@ const sample: TechniqueGroup[] = [
         name: 'Harai-goshi',
         translation: 'Fauchage de hanche',
         meta: 'demo',
+        dan: '1er dan',
         videoUrl: 'a',
         tags: ['hanche', 'fauchage'],
       },
@@ -18,6 +19,7 @@ const sample: TechniqueGroup[] = [
         name: 'Uki-goshi',
         translation: 'Hanche flottante',
         meta: 'demo',
+        dan: '1er dan',
         videoUrl: 'b',
         tags: ['hanche'],
       },
@@ -32,6 +34,7 @@ const sample: TechniqueGroup[] = [
         name: 'Hon-gesa-gatame',
         translation: 'Contrôle fondamental latéral',
         meta: 'demo',
+        dan: '1er dan',
         videoUrl: 'c',
         tags: ['immobilisation'],
       },
@@ -41,17 +44,17 @@ const sample: TechniqueGroup[] = [
 
 describe('filterTechniqueGroups', () => {
   it('returns original groups when query is empty', () => {
-    expect(filterTechniqueGroups(sample, '')).toEqual(sample);
+    expect(filterTechniqueGroups(sample, '', 'all')).toEqual(sample);
   });
 
   it('keeps techniques that match tags or names', () => {
-    const result = filterTechniqueGroups(sample, 'immobilisation');
+    const result = filterTechniqueGroups(sample, 'immobilisation', 'all');
     expect(result.length).toBe(1);
     expect(result[0].techniques[0].name).toBe('Hon-gesa-gatame');
   });
 
   it('removes groups with no matching techniques', () => {
-    const result = filterTechniqueGroups(sample, 'harai');
+    const result = filterTechniqueGroups(sample, 'harai', 'all');
     expect(result.length).toBe(1);
     expect(result[0].techniques.length).toBe(1);
   });

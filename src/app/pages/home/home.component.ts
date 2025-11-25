@@ -19,16 +19,25 @@ import { VideoModalService } from '../../services/video-modal.service';
 export class HomeComponent {
   readonly groups = TECHNIQUE_GROUPS;
   readonly query = signal('');
+  readonly selectedDan = signal('all');
   readonly openState = signal<Record<string, boolean>>(
     this.groups.reduce((state, group, index) => ({ ...state, [group.id]: index === 0 }), {} as Record<string, boolean>),
   );
 
-  readonly filteredGroups = computed(() => filterTechniqueGroups(this.groups, this.query()));
+  readonly danOptions = Array.from(
+    new Set(this.groups.flatMap((group) => group.techniques.map((technique) => technique.dan))),
+  ).sort();
+
+  readonly filteredGroups = computed(() => filterTechniqueGroups(this.groups, this.query(), this.selectedDan()));
 
   constructor(private readonly videoModal: VideoModalService) {}
 
   onQueryChange(value: string): void {
     this.query.set(value);
+  }
+
+  onDanChange(dan: string): void {
+    this.selectedDan.set(dan);
   }
 
   onToggleAll(): void {

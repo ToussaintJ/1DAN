@@ -2,9 +2,7 @@
   <div class="title">
     <h3><span class="jp">{{ technique.name }}</span> — {{ technique.translation }}</h3>
   </div>
-  <div class="meta">{{ technique.meta }}</div>
   <div class="actions">
-    <a class="btn-small" [href]="technique.videoUrl" target="_blank" rel="noreferrer">Ouvrir la vidéo</a>
     <button class="btn-small" type="button" (click)="preview.emit(technique.embedUrl || technique.videoUrl)">Aperçu</button>
     <a
       *ngIf="technique.searchUrl"
@@ -16,10 +14,7 @@
       Chercher d'autres sources
     </a>
   </div>
-  <div class="chips" *ngIf="technique.tags?.length">
-    <span class="chip" *ngFor="let tag of technique.tags">{{ tag }}</span>
+  <div class="chips" *ngIf="technique.dan || technique.tags?.length">
+    <span class="chip dan">{{ technique.dan }}</span>
   </div>
-  <label class="checkline">
-    <input type="checkbox" [(ngModel)]="reviewed" /> Révisé
-  </label>
 </article>

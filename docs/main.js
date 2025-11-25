@@ -322,10 +322,10 @@ let HeaderComponent = /*#__PURE__*/(() => {
         template: function HeaderComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header", 0)(1, "div", 1)(2, "h1");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Judo \u2013 1er Dan");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Judo \u2013 UV2");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 2);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Techniques officielles (style Kodokan), traductions litt\u00E9rales et liens vid\u00E9o pour r\u00E9viser smart. Tape pour filtrer \uD83D\uDC47");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Techniques officielles (style Kodokan), et liens vid\u00E9o pour r\u00E9viser. Tape pour filtrer \uD83D\uDC47");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
           }
         },
@@ -357,10 +357,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-function TileComponent_a_13_Template(rf, ctx) {
+function TileComponent_a_9_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Chercher d'autres sources ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
   }
@@ -369,28 +368,16 @@ function TileComponent_a_13_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", ctx_r0.technique.searchUrl, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
   }
 }
-function TileComponent_div_14_span_1_Template(rf, ctx) {
+function TileComponent_div_10_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-  }
-  if (rf & 2) {
-    const tag_r2 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](tag_r2);
-  }
-}
-function TileComponent_div_14_Template(rf, ctx) {
-  if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, TileComponent_div_14_span_1_Template, 2, 1, "span", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8)(1, "span", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r0.technique.tags);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.technique.dan);
   }
 }
 let TileComponent = /*#__PURE__*/(() => {
@@ -416,9 +403,9 @@ let TileComponent = /*#__PURE__*/(() => {
         },
         standalone: true,
         features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵStandaloneFeature"]],
-        decls: 18,
-        vars: 7,
-        consts: [[1, "tile"], [1, "title"], [1, "jp"], [1, "meta"], [1, "actions"], ["target", "_blank", "rel", "noreferrer", 1, "btn-small", 3, "href"], ["type", "button", 1, "btn-small", 3, "click"], ["class", "btn-small", "target", "_blank", "rel", "noreferrer", 3, "href", 4, "ngIf"], ["class", "chips", 4, "ngIf"], [1, "checkline"], ["type", "checkbox", 3, "ngModelChange", "ngModel"], [1, "chips"], ["class", "chip", 4, "ngFor", "ngForOf"], [1, "chip"]],
+        decls: 11,
+        vars: 4,
+        consts: [[1, "tile"], [1, "title"], [1, "jp"], [1, "actions"], ["type", "button", 1, "btn-small", 3, "click"], ["class", "btn-small", "target", "_blank", "rel", "noreferrer", 3, "href", 4, "ngIf"], ["class", "chips", 4, "ngIf"], ["target", "_blank", "rel", "noreferrer", 1, "btn-small", 3, "href"], [1, "chips"], [1, "chip", "dan"]],
         template: function TileComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article", 0)(1, "div", 1)(2, "h3")(3, "span", 2);
@@ -426,49 +413,30 @@ let TileComponent = /*#__PURE__*/(() => {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 4)(9, "a", 5);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Ouvrir la vid\u00E9o");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "button", 6);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TileComponent_Template_button_click_11_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3)(7, "button", 4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TileComponent_Template_button_click_7_listener() {
               return ctx.preview.emit(ctx.technique.embedUrl || ctx.technique.videoUrl);
             });
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Aper\u00E7u");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Aper\u00E7u");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, TileComponent_a_13_Template, 2, 1, "a", 7);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, TileComponent_a_9_Template, 2, 1, "a", 5);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](14, TileComponent_div_14_Template, 2, 1, "div", 8);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "label", 9)(16, "input", 10);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayListener"]("ngModelChange", function TileComponent_Template_input_ngModelChange_16_listener($event) {
-              _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayBindingSet"](ctx.reviewed, $event) || (ctx.reviewed = $event);
-              return $event;
-            });
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, TileComponent_div_10_Template, 3, 1, "div", 6);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " R\u00E9vis\u00E9 ");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
           }
           if (rf & 2) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.technique.name);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" \u2014 ", ctx.technique.translation, "");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.technique.meta);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", ctx.technique.videoUrl, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.technique.searchUrl);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.technique.tags == null ? null : ctx.technique.tags.length);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx.reviewed);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.technique.dan || (ctx.technique.tags == null ? null : ctx.technique.tags.length));
           }
         },
-        dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_1__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.CheckboxControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgModel],
-        styles: [".tile[_ngcontent-%COMP%] {\n  grid-column: span 12;\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  padding: 12px;\n  background: #0f1424;\n}\n\n.title[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 8px;\n  margin-bottom: 8px;\n}\n\n.title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  margin: 0;\n  font-size: 16px;\n}\n\n.title[_ngcontent-%COMP%]   .jp[_ngcontent-%COMP%] {\n  color: var(--accent);\n  font-weight: 800;\n  letter-spacing: 0.3px;\n}\n\n.meta[_ngcontent-%COMP%] {\n  font-size: 13px;\n  color: var(--muted);\n  margin-bottom: 8px;\n}\n\n.actions[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 8px;\n  flex-wrap: wrap;\n  margin-top: 8px;\n}\n\n.chips[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 6px;\n  margin-top: 10px;\n}\n\n.chip[_ngcontent-%COMP%] {\n  font-size: 12px;\n  border: 1px solid var(--border);\n  padding: 6px 8px;\n  border-radius: 999px;\n  color: var(--muted);\n}\n\n.checkline[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  margin-top: 10px;\n  font-size: 12.5px;\n  color: var(--muted);\n}\n\n.checkline[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 18px;\n  height: 18px;\n  accent-color: var(--accent-2);\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy90aWxlL3RpbGUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxvQkFBQTtFQUNBLCtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsUUFBQTtFQUNBLGtCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxTQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0Usb0JBQUE7RUFDQSxnQkFBQTtFQUNBLHFCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtFQUNBLFFBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtFQUNBLGVBQUE7RUFDQSxRQUFBO0VBQ0EsZ0JBQUE7QUFDRjs7QUFFQTtFQUNFLGVBQUE7RUFDQSwrQkFBQTtFQUNBLGdCQUFBO0VBQ0Esb0JBQUE7RUFDQSxtQkFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsUUFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxtQkFBQTtBQUNGOztBQUVBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSw2QkFBQTtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLnRpbGUge1xyXG4gIGdyaWQtY29sdW1uOiBzcGFuIDEyO1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWJvcmRlcik7XHJcbiAgYm9yZGVyLXJhZGl1czogMTJweDtcclxuICBwYWRkaW5nOiAxMnB4O1xyXG4gIGJhY2tncm91bmQ6ICMwZjE0MjQ7XHJcbn1cclxuXHJcbi50aXRsZSB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICBnYXA6IDhweDtcclxuICBtYXJnaW4tYm90dG9tOiA4cHg7XHJcbn1cclxuXHJcbi50aXRsZSBoMyB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIGZvbnQtc2l6ZTogMTZweDtcclxufVxyXG5cclxuLnRpdGxlIC5qcCB7XHJcbiAgY29sb3I6IHZhcigtLWFjY2VudCk7XHJcbiAgZm9udC13ZWlnaHQ6IDgwMDtcclxuICBsZXR0ZXItc3BhY2luZzogMC4zcHg7XHJcbn1cclxuXHJcbi5tZXRhIHtcclxuICBmb250LXNpemU6IDEzcHg7XHJcbiAgY29sb3I6IHZhcigtLW11dGVkKTtcclxuICBtYXJnaW4tYm90dG9tOiA4cHg7XHJcbn1cclxuXHJcbi5hY3Rpb25zIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGdhcDogOHB4O1xyXG4gIGZsZXgtd3JhcDogd3JhcDtcclxuICBtYXJnaW4tdG9wOiA4cHg7XHJcbn1cclxuXHJcbi5jaGlwcyB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgZ2FwOiA2cHg7XHJcbiAgbWFyZ2luLXRvcDogMTBweDtcclxufVxyXG5cclxuLmNoaXAge1xyXG4gIGZvbnQtc2l6ZTogMTJweDtcclxuICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1ib3JkZXIpO1xyXG4gIHBhZGRpbmc6IDZweCA4cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogOTk5cHg7XHJcbiAgY29sb3I6IHZhcigtLW11dGVkKTtcclxufVxyXG5cclxuLmNoZWNrbGluZSB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGdhcDogOHB4O1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgZm9udC1zaXplOiAxMi41cHg7XHJcbiAgY29sb3I6IHZhcigtLW11dGVkKTtcclxufVxyXG5cclxuLmNoZWNrbGluZSBpbnB1dCB7XHJcbiAgd2lkdGg6IDE4cHg7XHJcbiAgaGVpZ2h0OiAxOHB4O1xyXG4gIGFjY2VudC1jb2xvcjogdmFyKC0tYWNjZW50LTIpO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */"]
+        dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormsModule],
+        styles: [".tile[_ngcontent-%COMP%] {\n  grid-column: span 12;\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  padding: 12px;\n  background: #0f1424;\n}\n\n.title[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 8px;\n  margin-bottom: 8px;\n}\n\n.title[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  margin: 0;\n  font-size: 16px;\n}\n\n.title[_ngcontent-%COMP%]   .jp[_ngcontent-%COMP%] {\n  color: var(--accent);\n  font-weight: 800;\n  letter-spacing: 0.3px;\n}\n\n.meta[_ngcontent-%COMP%] {\n  font-size: 13px;\n  color: var(--muted);\n  margin-bottom: 8px;\n}\n\n.actions[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 8px;\n  flex-wrap: wrap;\n  margin-top: 8px;\n}\n\n.chips[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 6px;\n  margin-top: 10px;\n}\n\n.chip[_ngcontent-%COMP%] {\n  font-size: 12px;\n  border: 1px solid var(--border);\n  padding: 6px 8px;\n  border-radius: 999px;\n  color: var(--muted);\n}\n\n.chip.dan[_ngcontent-%COMP%] {\n  border-color: var(--accent-2);\n  color: var(--accent-2);\n  font-weight: 700;\n}\n\n.checkline[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  margin-top: 10px;\n  font-size: 12.5px;\n  color: var(--muted);\n}\n\n.checkline[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 18px;\n  height: 18px;\n  accent-color: var(--accent-2);\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy90aWxlL3RpbGUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxvQkFBQTtFQUNBLCtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsUUFBQTtFQUNBLGtCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxTQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0Usb0JBQUE7RUFDQSxnQkFBQTtFQUNBLHFCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtFQUNBLFFBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtFQUNBLGVBQUE7RUFDQSxRQUFBO0VBQ0EsZ0JBQUE7QUFDRjs7QUFFQTtFQUNFLGVBQUE7RUFDQSwrQkFBQTtFQUNBLGdCQUFBO0VBQ0Esb0JBQUE7RUFDQSxtQkFBQTtBQUNGOztBQUVBO0VBQ0UsNkJBQUE7RUFDQSxzQkFBQTtFQUNBLGdCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxRQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLG1CQUFBO0FBQ0Y7O0FBRUE7RUFDRSxXQUFBO0VBQ0EsWUFBQTtFQUNBLDZCQUFBO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIudGlsZSB7XHJcbiAgZ3JpZC1jb2x1bW46IHNwYW4gMTI7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tYm9yZGVyKTtcclxuICBib3JkZXItcmFkaXVzOiAxMnB4O1xyXG4gIHBhZGRpbmc6IDEycHg7XHJcbiAgYmFja2dyb3VuZDogIzBmMTQyNDtcclxufVxyXG5cclxuLnRpdGxlIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gIGdhcDogOHB4O1xyXG4gIG1hcmdpbi1ib3R0b206IDhweDtcclxufVxyXG5cclxuLnRpdGxlIGgzIHtcclxuICBtYXJnaW46IDA7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG59XHJcblxyXG4udGl0bGUgLmpwIHtcclxuICBjb2xvcjogdmFyKC0tYWNjZW50KTtcclxuICBmb250LXdlaWdodDogODAwO1xyXG4gIGxldHRlci1zcGFjaW5nOiAwLjNweDtcclxufVxyXG5cclxuLm1ldGEge1xyXG4gIGZvbnQtc2l6ZTogMTNweDtcclxuICBjb2xvcjogdmFyKC0tbXV0ZWQpO1xyXG4gIG1hcmdpbi1ib3R0b206IDhweDtcclxufVxyXG5cclxuLmFjdGlvbnMge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZ2FwOiA4cHg7XHJcbiAgZmxleC13cmFwOiB3cmFwO1xyXG4gIG1hcmdpbi10b3A6IDhweDtcclxufVxyXG5cclxuLmNoaXBzIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtd3JhcDogd3JhcDtcclxuICBnYXA6IDZweDtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG59XHJcblxyXG4uY2hpcCB7XHJcbiAgZm9udC1zaXplOiAxMnB4O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWJvcmRlcik7XHJcbiAgcGFkZGluZzogNnB4IDhweDtcclxuICBib3JkZXItcmFkaXVzOiA5OTlweDtcclxuICBjb2xvcjogdmFyKC0tbXV0ZWQpO1xyXG59XHJcblxyXG4uY2hpcC5kYW4ge1xyXG4gIGJvcmRlci1jb2xvcjogdmFyKC0tYWNjZW50LTIpO1xyXG4gIGNvbG9yOiB2YXIoLS1hY2NlbnQtMik7XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxufVxyXG5cclxuLmNoZWNrbGluZSB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGdhcDogOHB4O1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgZm9udC1zaXplOiAxMi41cHg7XHJcbiAgY29sb3I6IHZhcigtLW11dGVkKTtcclxufVxyXG5cclxuLmNoZWNrbGluZSBpbnB1dCB7XHJcbiAgd2lkdGg6IDE4cHg7XHJcbiAgaGVpZ2h0OiAxOHB4O1xyXG4gIGFjY2VudC1jb2xvcjogdmFyKC0tYWNjZW50LTIpO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */"]
       });
     }
   }
@@ -488,25 +456,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   ToolbarComponent: () => (/* binding */ ToolbarComponent)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 316);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 4456);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 2575);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 1817);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 2510);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 2575);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 1817);
 
 
 
 
 
 
+
+function ToolbarComponent_option_12_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "option", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const dan_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", dan_r1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](dan_r1);
+  }
+}
 let ToolbarComponent = /*#__PURE__*/(() => {
   class ToolbarComponent {
     constructor() {
+      this.danOptions = [];
+      this.selectedDan = 'all';
       this.queryChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+      this.danChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
       this.toggleAll = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
       this.searchControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControl('', {
         nonNullable: true
       });
-      this.sub = this.searchControl.valueChanges.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.debounceTime)(200), (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.distinctUntilChanged)()).subscribe(value => this.queryChange.emit(value.trim()));
+      this.danControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControl('all', {
+        nonNullable: true
+      });
+      this.sub = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subscription();
+      this.sub.add(this.searchControl.valueChanges.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_3__.debounceTime)(200), (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.distinctUntilChanged)()).subscribe(value => this.queryChange.emit(value.trim())));
+      this.sub.add(this.danControl.valueChanges.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_4__.distinctUntilChanged)()).subscribe(value => this.danChange.emit(value)));
+    }
+    ngOnChanges(changes) {
+      if (changes['selectedDan'] && this.selectedDan !== this.danControl.value) {
+        this.danControl.setValue(this.selectedDan, {
+          emitEvent: false
+        });
+      }
     }
     ngOnDestroy() {
       this.sub.unsubscribe();
@@ -520,15 +518,20 @@ let ToolbarComponent = /*#__PURE__*/(() => {
       this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
         type: ToolbarComponent,
         selectors: [["app-toolbar"]],
+        inputs: {
+          danOptions: "danOptions",
+          selectedDan: "selectedDan"
+        },
         outputs: {
           queryChange: "queryChange",
+          danChange: "danChange",
           toggleAll: "toggleAll"
         },
         standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵStandaloneFeature"]],
-        decls: 8,
-        vars: 1,
-        consts: [[1, "toolbar", "container"], [1, "search"], ["width", "18", "height", "18", "viewBox", "0 0 24 24", "fill", "none", "aria-hidden", "true"], ["d", "M15.5 15.5L21 21", "stroke", "#9aa4b2", "stroke-width", "1.7", "stroke-linecap", "round"], ["cx", "10.5", "cy", "10.5", "r", "6.5", "stroke", "#9aa4b2", "stroke-width", "1.7"], ["type", "search", "placeholder", "Rechercher (ex: uchi, hanche, \u00E9tranglement, \u2026)", 3, "formControl"], ["type", "button", 1, "btn", 3, "click"]],
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵStandaloneFeature"]],
+        decls: 15,
+        vars: 3,
+        consts: [[1, "toolbar", "container"], [1, "search"], ["width", "18", "height", "18", "viewBox", "0 0 24 24", "fill", "none", "aria-hidden", "true"], ["d", "M15.5 15.5L21 21", "stroke", "#9aa4b2", "stroke-width", "1.7", "stroke-linecap", "round"], ["cx", "10.5", "cy", "10.5", "r", "6.5", "stroke", "#9aa4b2", "stroke-width", "1.7"], ["type", "search", "placeholder", "Rechercher (ex: uchi, hanche, \u00E9tranglement, \u2026)", 3, "formControl"], [1, "select"], [3, "formControl"], ["value", "all"], [3, "value", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", 3, "click"], [3, "value"]],
         template: function ToolbarComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "label", 1);
@@ -539,20 +542,32 @@ let ToolbarComponent = /*#__PURE__*/(() => {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnamespaceHTML"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "input", 5);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 6);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ToolbarComponent_Template_button_click_6_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "label", 6)(7, "span");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Filtrer par dan");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "select", 7)(10, "option", 8);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Tous les dans");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](12, ToolbarComponent_option_12_Template, 2, 2, "option", 9);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "button", 10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ToolbarComponent_Template_button_click_13_listener() {
               return ctx.toggleAll.emit();
             });
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Tout ouvrir / fermer");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Tout ouvrir / fermer");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
           }
           if (rf & 2) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formControl", ctx.searchControl);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formControl", ctx.danControl);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.danOptions);
           }
         },
-        dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControlDirective],
-        styles: [".toolbar[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  gap: 12px;\n  margin-top: 8px;\n}\n\n.search[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  background: var(--card);\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  padding: 10px 12px;\n}\n\n.search[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  flex: 1;\n  background: transparent;\n  border: 0;\n  color: var(--text);\n  outline: none;\n  font-size: 15px;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy90b29sYmFyL3Rvb2xiYXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0EsK0JBQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsU0FBQTtFQUNBLHVCQUFBO0VBQ0EsK0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0VBQ0EsdUJBQUE7RUFDQSxTQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0VBQ0EsZUFBQTtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLnRvb2xiYXIge1xyXG4gIGRpc3BsYXk6IGdyaWQ7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgYXV0bztcclxuICBnYXA6IDEycHg7XHJcbiAgbWFyZ2luLXRvcDogOHB4O1xyXG59XHJcblxyXG4uc2VhcmNoIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgZ2FwOiAxMHB4O1xyXG4gIGJhY2tncm91bmQ6IHZhcigtLWNhcmQpO1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWJvcmRlcik7XHJcbiAgYm9yZGVyLXJhZGl1czogMTJweDtcclxuICBwYWRkaW5nOiAxMHB4IDEycHg7XHJcbn1cclxuXHJcbi5zZWFyY2ggaW5wdXQge1xyXG4gIGZsZXg6IDE7XHJcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyOiAwO1xyXG4gIGNvbG9yOiB2YXIoLS10ZXh0KTtcclxuICBvdXRsaW5lOiBub25lO1xyXG4gIGZvbnQtc2l6ZTogMTVweDtcclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
+        dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgSelectOption, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵNgSelectMultipleOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.SelectControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControlDirective],
+        styles: [".toolbar[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: 1fr 200px auto;\n  gap: 12px;\n  margin-top: 8px;\n}\n\n.search[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  background: var(--card);\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  padding: 10px 12px;\n}\n\n.search[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  flex: 1;\n  background: transparent;\n  border: 0;\n  color: var(--text);\n  outline: none;\n  font-size: 15px;\n}\n\n.select[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n  background: var(--card);\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  padding: 8px 12px;\n}\n\n.select[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: var(--muted);\n}\n\n.select[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  background: transparent;\n  border: 1px solid var(--border);\n  border-radius: 10px;\n  color: var(--text);\n  padding: 8px 10px;\n  font-size: 14px;\n  outline: none;\n}\n.select[_ngcontent-%COMP%]   select[_ngcontent-%COMP%]   option[_ngcontent-%COMP%] {\n  color: var(--bg);\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy90b29sYmFyL3Rvb2xiYXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0EscUNBQUE7RUFDQSxTQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsU0FBQTtFQUNBLHVCQUFBO0VBQ0EsK0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0VBQ0EsdUJBQUE7RUFDQSxTQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsUUFBQTtFQUNBLHVCQUFBO0VBQ0EsK0JBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLHVCQUFBO0VBQ0EsK0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsYUFBQTtBQUNGO0FBQ0U7RUFDRSxnQkFBQTtBQUNKIiwic291cmNlc0NvbnRlbnQiOlsiLnRvb2xiYXIge1xyXG4gIGRpc3BsYXk6IGdyaWQ7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMjAwcHggYXV0bztcclxuICBnYXA6IDEycHg7XHJcbiAgbWFyZ2luLXRvcDogOHB4O1xyXG59XHJcblxyXG4uc2VhcmNoIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgZ2FwOiAxMHB4O1xyXG4gIGJhY2tncm91bmQ6IHZhcigtLWNhcmQpO1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWJvcmRlcik7XHJcbiAgYm9yZGVyLXJhZGl1czogMTJweDtcclxuICBwYWRkaW5nOiAxMHB4IDEycHg7XHJcbn1cclxuXHJcbi5zZWFyY2ggaW5wdXQge1xyXG4gIGZsZXg6IDE7XHJcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyOiAwO1xyXG4gIGNvbG9yOiB2YXIoLS10ZXh0KTtcclxuICBvdXRsaW5lOiBub25lO1xyXG4gIGZvbnQtc2l6ZTogMTVweDtcclxufVxyXG5cclxuLnNlbGVjdCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGdhcDogNnB4O1xyXG4gIGJhY2tncm91bmQ6IHZhcigtLWNhcmQpO1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWJvcmRlcik7XHJcbiAgYm9yZGVyLXJhZGl1czogMTJweDtcclxuICBwYWRkaW5nOiA4cHggMTJweDtcclxufVxyXG5cclxuLnNlbGVjdCBzcGFuIHtcclxuICBmb250LXNpemU6IDEycHg7XHJcbiAgY29sb3I6IHZhcigtLW11dGVkKTtcclxufVxyXG5cclxuLnNlbGVjdCBzZWxlY3Qge1xyXG4gIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWJvcmRlcik7XHJcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICBjb2xvcjogdmFyKC0tdGV4dCk7XHJcbiAgcGFkZGluZzogOHB4IDEwcHg7XHJcbiAgZm9udC1zaXplOiAxNHB4O1xyXG4gIG91dGxpbmU6IG5vbmU7XHJcblxyXG4gIG9wdGlvbiB7XHJcbiAgICBjb2xvcjogdmFyKC0tYmcpO1xyXG4gIH1cclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
       });
     }
   }
@@ -733,14 +748,19 @@ let HomeComponent = /*#__PURE__*/(() => {
       this.videoModal = videoModal;
       this.groups = _shared_techniques__WEBPACK_IMPORTED_MODULE_4__.TECHNIQUE_GROUPS;
       this.query = (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__.signal)('');
+      this.selectedDan = (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__.signal)('all');
       this.openState = (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__.signal)(this.groups.reduce((state, group, index) => ({
         ...state,
         [group.id]: index === 0
       }), {}));
-      this.filteredGroups = (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__.computed)(() => (0,_shared_filter_techniques__WEBPACK_IMPORTED_MODULE_5__.filterTechniqueGroups)(this.groups, this.query()));
+      this.danOptions = Array.from(new Set(this.groups.flatMap(group => group.techniques.map(technique => technique.dan)))).sort();
+      this.filteredGroups = (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__.computed)(() => (0,_shared_filter_techniques__WEBPACK_IMPORTED_MODULE_5__.filterTechniqueGroups)(this.groups, this.query(), this.selectedDan()));
     }
     onQueryChange(value) {
       this.query.set(value);
+    }
+    onDanChange(dan) {
+      this.selectedDan.set(dan);
     }
     onToggleAll() {
       const current = this.openState();
@@ -773,8 +793,8 @@ let HomeComponent = /*#__PURE__*/(() => {
         standalone: true,
         features: [_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵStandaloneFeature"]],
         decls: 8,
-        vars: 2,
-        consts: [["empty", ""], [1, "page"], [3, "queryChange", "toggleAll"], [1, "content", "container"], [4, "ngIf", "ngIfElse"], [3, "openChange", "previewVideo", "groups", "openState"], [1, "empty"]],
+        vars: 4,
+        consts: [["empty", ""], [1, "page"], [3, "queryChange", "danChange", "toggleAll", "danOptions", "selectedDan"], [1, "content", "container"], [4, "ngIf", "ngIfElse"], [3, "openChange", "previewVideo", "groups", "openState"], [1, "empty"]],
         template: function HomeComponent_Template(rf, ctx) {
           if (rf & 1) {
             const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵgetCurrentView"]();
@@ -784,6 +804,9 @@ let HomeComponent = /*#__PURE__*/(() => {
             _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("queryChange", function HomeComponent_Template_app_toolbar_queryChange_2_listener($event) {
               _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrestoreView"](_r1);
               return _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵresetView"](ctx.onQueryChange($event));
+            })("danChange", function HomeComponent_Template_app_toolbar_danChange_2_listener($event) {
+              _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrestoreView"](_r1);
+              return _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵresetView"](ctx.onDanChange($event));
             })("toggleAll", function HomeComponent_Template_app_toolbar_toggleAll_2_listener() {
               _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrestoreView"](_r1);
               return _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵresetView"](ctx.onToggleAll());
@@ -796,7 +819,9 @@ let HomeComponent = /*#__PURE__*/(() => {
           }
           if (rf & 2) {
             const empty_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵreference"](6);
-            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("danOptions", ctx.danOptions)("selectedDan", ctx.selectedDan());
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);
             _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx.filteredGroups().length)("ngIfElse", empty_r4);
           }
         },
@@ -896,15 +921,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   filterTechniqueGroups: () => (/* binding */ filterTechniqueGroups)
 /* harmony export */ });
-function filterTechniqueGroups(groups, query) {
+function filterTechniqueGroups(groups, query, dan) {
   const normalized = query.trim().toLowerCase();
+  const danFilter = dan.toLowerCase();
   if (!normalized) {
-    return groups;
+    if (danFilter === 'all') {
+      return groups;
+    }
+    return groups.map(group => ({
+      ...group,
+      techniques: group.techniques.filter(technique => technique.dan.toLowerCase() === danFilter)
+    })).filter(group => group.techniques.length > 0);
   }
   const terms = normalized.split(/\s+/).filter(Boolean);
   return groups.map(group => ({
     ...group,
-    techniques: group.techniques.filter(technique => terms.every(term => [technique.name, technique.translation, technique.meta, ...(technique.tags ?? [])].join(' ').toLowerCase().includes(term)))
+    techniques: group.techniques.filter(technique => {
+      const searchable = [technique.name, technique.translation, technique.meta, technique.dan, ...(technique.tags ?? [])].join(' ').toLowerCase();
+      const matchesQuery = terms.every(term => searchable.includes(term));
+      const matchesDan = danFilter === 'all' || technique.dan.toLowerCase() === danFilter;
+      return matchesQuery && matchesDan;
+    })
   })).filter(group => group.techniques.length > 0);
 }
 
@@ -927,6 +964,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Harai-goshi",
     "translation": "Fauchage de hanche",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=qTo8HlAAkOo",
     "embedUrl": "https://www.youtube.com/watch?v=qTo8HlAAkOo",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Harai+goshi"
@@ -935,6 +973,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Kubi-nage",
     "translation": "Projection par la nuque",
     "meta": "Vidéo : KODOKAN MILANO",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=7zCgLqa1VbI",
     "embedUrl": "https://www.youtube.com/watch?v=7zCgLqa1VbI",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Kubi+nage"
@@ -943,6 +982,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Koshi-guruma",
     "translation": "Roue autour des hanches",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=SU7Id6uVJ44",
     "embedUrl": "https://www.youtube.com/watch?v=SU7Id6uVJ44",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Koshi+guruma"
@@ -951,6 +991,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "O-goshi",
     "translation": "Grande hanche",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=yhu1mfy2vJ4",
     "embedUrl": "https://www.youtube.com/watch?v=yhu1mfy2vJ4",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+O+goshi"
@@ -959,6 +1000,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Tsurikomi-goshi",
     "translation": "Hanche avec traction et élévation",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=McfzA0yRVt4",
     "embedUrl": "https://www.youtube.com/watch?v=McfzA0yRVt4",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Tsurikomi+goshi"
@@ -967,6 +1009,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Uchi-mata",
     "translation": "Fauchage intérieur de cuisse",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=iUpSu5J-bgw",
     "embedUrl": "https://www.youtube.com/watch?v=iUpSu5J-bgw",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Uchi+mata"
@@ -975,9 +1018,55 @@ const TECHNIQUE_GROUPS = [{
     "name": "Uki-goshi",
     "translation": "Hanche flottante",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=bPKwtB4lyOQ",
     "embedUrl": "https://www.youtube.com/watch?v=bPKwtB4lyOQ",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Uki+goshi"
+  }, {
+    "tags": ["hane-goshi", "hanche", "ressort", "projection", "koshi-waza"],
+    "name": "Hane-goshi",
+    "translation": "Hanche à ressort",
+    "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=M9_7De6A1kk",
+    "embedUrl": "https://www.youtube.com/embed/M9_7De6A1kk",
+    "searchUrl": "https://www.youtube.com/results?search_query=Hane+goshi"
+  }, {
+    "tags": ["sode-tsurikomi-goshi", "hanche", "manche", "traction", "koshi-waza"],
+    "name": "Sode-tsurikomi-goshi",
+    "translation": "Hanche avec traction par la manche",
+    "meta": "Vidéo : Kodokan",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=CkFAFbXgRM4",
+    "embedUrl": "https://www.youtube.com/embed/CkFAFbXgRM4",
+    "searchUrl": "https://www.youtube.com/results?search_query=Sode+tsurikomi+goshi"
+  }, {
+    "tags": ["tsuri-goshi", "hanche", "elevation", "koshi-waza"],
+    "name": "Tsuri-goshi",
+    "translation": "Hanche relevée",
+    "meta": "Vidéo : Kodokan",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=51Htlp7xEvE",
+    "embedUrl": "https://www.youtube.com/embed/51Htlp7xEvE",
+    "searchUrl": "https://www.youtube.com/results?search_query=Tsuri+goshi"
+  }, {
+    "tags": ["utsuri-goshi", "hanche", "portage", "koshi-waza"],
+    "name": "Utsuri-goshi",
+    "translation": "Transfert de hanche",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=4pQd_bEnlf0",
+    "embedUrl": "https://www.youtube.com/embed/4pQd_bEnlf0",
+    "searchUrl": "https://www.youtube.com/results?search_query=Utsuri+goshi"
+  }, {
+    "tags": ["ushiro-goshi", "hanche", "arriere", "koshi-waza"],
+    "name": "Ushiro-goshi",
+    "translation": "Hanche arrière",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=ORIYstuxYT8",
+    "embedUrl": "https://www.youtube.com/embed/ORIYstuxYT8",
+    "searchUrl": "https://www.youtube.com/results?search_query=Ushiro+goshi"
   }],
   "id": "koshi-waza",
   "label": "Koshi-waza"
@@ -988,6 +1077,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Ippon-seoi-nage",
     "translation": "Projection par l'épaule (une main)",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=FQnOlCxo4oI",
     "embedUrl": "https://www.youtube.com/watch?v=FQnOlCxo4oI",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Ippon+Seoi+Nage"
@@ -996,14 +1086,16 @@ const TECHNIQUE_GROUPS = [{
     "name": "Kata-guruma",
     "translation": "Roue autour des épaules",
     "meta": "Vidéo : Kodokan × IJF Academy",
-    "videoUrl": "https://www.youtube.com/watch?v=g1C2E0g7yNw",
-    "embedUrl": "https://www.youtube.com/watch?v=g1C2E0g7yNw",
+    "dan": "1er dan",
+    "videoUrl": "https://www.youtube.com/watch?v=cnHRhSy8yi4",
+    "embedUrl": "https://www.youtube.com/watch?v=cnHRhSy8yi4",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Kata+guruma"
   }, {
     "tags": ["uki-otoshi", "chute", "flottante", "projection", "te-waza"],
     "name": "Uki-otoshi",
     "translation": "Chute flottante",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=6H5tmncOY4Q",
     "embedUrl": "https://www.youtube.com/watch?v=6H5tmncOY4Q",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Uki+otoshi"
@@ -1012,6 +1104,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Tai-otoshi",
     "translation": "Chute du corps",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=4x6S3Q-Ktv8",
     "embedUrl": "https://www.youtube.com/watch?v=4x6S3Q-Ktv8",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Tai+otoshi"
@@ -1020,9 +1113,99 @@ const TECHNIQUE_GROUPS = [{
     "name": "Morote-seoi-nage",
     "translation": "Projection par l'épaule (à deux mains)",
     "meta": "Vidéo : Réf. Seoi-nage (Kodokan)",
-    "videoUrl": "https://www.youtube.com/watch?v=zIq0xI0ogxk",
-    "embedUrl": "https://www.youtube.com/watch?v=zIq0xI0ogxk",
+    "dan": "1er dan",
+    "videoUrl": "https://www.youtube.com/watch?v=UjtL1h9htb8",
+    "embedUrl": "https://www.youtube.com/watch?v=UjtL1h9htb8",
     "searchUrl": "https://www.youtube.com/results?search_query=Kodokan+Morote+Seoi+Nage"
+  }, {
+    "tags": ["eri-seoi-nage", "seoi", "epaule", "manche", "te-waza"],
+    "name": "Eri-seoi-nage",
+    "translation": "Projection par l'épaule en saisissant le col",
+    "meta": "Vidéo : Eri Seoi Nage (Go JUDO Go!)",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=L1deOa7c5Jo",
+    "embedUrl": "https://www.youtube.com/watch?v=L1deOa7c5Jo",
+    "searchUrl": "https://www.youtube.com/results?search_query=Eri+seoi+nage"
+  }, {
+    "tags": ["te-guruma", "roue", "mains", "te-waza"],
+    "name": "Te-guruma",
+    "translation": "Roue réalisée avec les mains",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=i1vdi8hEAPU",
+    "searchUrl": "https://www.youtube.com/watch?v=i1vdi8hEAPU"
+  }, {
+    "tags": ["morote-gari", "double", "ramassage", "te-waza"],
+    "name": "Morote-gari",
+    "translation": "Ramassage à deux mains",
+    "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=BHLQS4K85bs",
+    "embedUrl": "https://www.youtube.com/watch?v=BHLQS4K85bs",
+    "searchUrl": "https://www.youtube.com/results?search_query=Morote+gari"
+  }, {
+    "tags": ["kuchiki-taoshi", "abattage", "jambe", "te-waza"],
+    "name": "Kuchiki-taoshi",
+    "translation": "Abattage sur jambe saisie",
+    "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=ZNL47q1aJNY",
+    "embedUrl": "https://www.youtube.com/embed/ZNL47q1aJNY",
+    "searchUrl": "https://www.youtube.com/results?search_query=Kuchiki+taoshi"
+  }, {
+    "tags": ["sumi-otoshi", "chute", "coin", "te-waza"],
+    "name": "Sumi-otoshi",
+    "translation": "Chute de coin",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=lLU9wv52ni0",
+    "embedUrl": "https://www.youtube.com/embed/lLU9wv52ni0",
+    "searchUrl": "https://www.youtube.com/results?search_query=Sumi+otoshi"
+  }, {
+    "tags": ["kibisu-gaeshi", "contre", "talon", "te-waza"],
+    "name": "Kibisu-gaeshi",
+    "translation": "Contre sur le talon",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=tJylJYfBliA",
+    "embedUrl": "https://www.youtube.com/embed/tJylJYfBliA",
+    "searchUrl": "https://www.youtube.com/results?search_query=Kibisu+gaeshi"
+  }, {
+    "tags": ["uchi-mata-sukashi", "esquive", "cuisse", "te-waza"],
+    "name": "Uchi-mata-sukashi",
+    "translation": "Esquive d'uchi-mata",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=V-RS3uhtVWM",
+    "embedUrl": "https://www.youtube.com/embed/V-RS3uhtVWM",
+    "searchUrl": "https://www.youtube.com/results?search_query=Uchi+mata+sukashi"
+  }, {
+    "tags": ["sukui-nage", "soulevement", "bras", "te-waza"],
+    "name": "Sukui-nage",
+    "translation": "Projection en soulevant",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=vU6aJ2kFxoI",
+    "embedUrl": "https://www.youtube.com/embed/vU6aJ2kFxoI",
+    "searchUrl": "https://www.youtube.com/results?search_query=Sukui+nage"
+  }, {
+    "tags": ["yama-arashi", "tempete", "montagne", "te-waza"],
+    "name": "Yama-arashi",
+    "translation": "Tempête de montagne",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=MGlyKmSuzdc",
+    "embedUrl": "https://www.youtube.com/embed/MGlyKmSuzdc",
+    "searchUrl": "https://www.youtube.com/results?search_query=Yama+arashi"
+  }, {
+    "tags": ["seoi-otoshi", "chute", "epaule", "te-waza"],
+    "name": "Seoi-otoshi",
+    "translation": "Chute sur l'épaule",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=vu1TMVNnq34",
+    "embedUrl": "https://www.youtube.com/embed/vu1TMVNnq34",
+    "searchUrl": "https://www.youtube.com/results?search_query=Seoi+otoshi"
   }],
   "id": "te-waza",
   "label": "Te-waza"
@@ -1033,6 +1216,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "De-ashi-barai",
     "translation": "Balayage des pieds avancés",
     "meta": "Vidéo : Kodokan / IJF demo",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=4BUUvqxi_Kk",
     "embedUrl": "https://www.youtube.com/watch?v=4BUUvqxi_Kk"
   }, {
@@ -1040,6 +1224,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Hiza-guruma",
     "translation": "Roue autour du genou",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=JPJx9-oAVns",
     "embedUrl": "https://www.youtube.com/watch?v=JPJx9-oAVns"
   }, {
@@ -1047,6 +1232,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Sasae-tsurikomi-ashi",
     "translation": "Blocage du pied avec traction",
     "meta": "Vidéo : Kodokan demo",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=699i--pvYmE",
     "embedUrl": "https://www.youtube.com/watch?v=699i--pvYmE"
   }, {
@@ -1054,6 +1240,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Ko-soto-gari",
     "translation": "Petit fauchage extérieur",
     "meta": "Vidéo : Kodokan",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=jeQ541ScLB4",
     "embedUrl": "https://www.youtube.com/watch?v=jeQ541ScLB4"
   }, {
@@ -1061,6 +1248,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Ko-uchi-gari",
     "translation": "Petit fauchage intérieur",
     "meta": "Vidéo : Kodokan",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=3Jb3tZvr9Ng",
     "embedUrl": "https://www.youtube.com/watch?v=3Jb3tZvr9Ng"
   }, {
@@ -1068,6 +1256,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Okuri-ashi-barai",
     "translation": "Balayage des deux pieds en mouvement",
     "meta": "Vidéo : Kodokan × IJF Academy",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=nw1ZdRjrdRI",
     "embedUrl": "https://www.youtube.com/watch?v=nw1ZdRjrdRI"
   }, {
@@ -1075,8 +1264,81 @@ const TECHNIQUE_GROUPS = [{
     "name": "O-soto-gari",
     "translation": "Grand fauchage extérieur",
     "meta": "Vidéo : Kodokan demo",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=c-A_nP7mKAc",
     "embedUrl": "https://www.youtube.com/watch?v=c-A_nP7mKAc"
+  }, {
+    "tags": ["o-guruma", "grande", "roue", "ashi-waza"],
+    "name": "O-guruma",
+    "translation": "Grande roue",
+    "meta": "Vidéo : Kodokan",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=SnZciTAY9vc",
+    "embedUrl": "https://www.youtube.com/embed/SnZciTAY9vc",
+    "searchUrl": "https://www.youtube.com/results?search_query=O+guruma"
+  }, {
+    "tags": ["ashi-guruma", "roue", "jambe", "ashi-waza"],
+    "name": "Ashi-guruma",
+    "translation": "Roue avec la jambe",
+    "meta": "Vidéo : Kodokan",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=ROeayhvom9U",
+    "embedUrl": "https://www.youtube.com/embed/ROeayhvom9U",
+    "searchUrl": "https://www.youtube.com/results?search_query=Ashi+guruma"
+  }, {
+    "tags": ["ko-soto-gake", "accrochage", "exterieur", "ashi-waza"],
+    "name": "Ko-soto-gake",
+    "translation": "Petit accrochage extérieur",
+    "meta": "Vidéo : Kodokan",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=8b6kY4s4zH4",
+    "embedUrl": "https://www.youtube.com/embed/8b6kY4s4zH4",
+    "searchUrl": "https://www.youtube.com/results?search_query=Ko+soto+gake"
+  }, {
+    "tags": ["o-soto-otoshi", "chute", "exterieur", "ashi-waza"],
+    "name": "O-soto-otoshi",
+    "translation": "Chute extérieure",
+    "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=2DsVvDw7b8g",
+    "embedUrl": "https://www.youtube.com/embed/2DsVvDw7b8g",
+    "searchUrl": "https://www.youtube.com/results?search_query=O+soto+otoshi"
+  }, {
+    "tags": ["tsubame-gaeshi", "contre", "balayage", "ashi-waza"],
+    "name": "Tsubame-gaeshi",
+    "translation": "Contre de l'hirondelle",
+    "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=GwweWqqFB5g",
+    "embedUrl": "https://www.youtube.com/embed/GwweWqqFB5g",
+    "searchUrl": "https://www.youtube.com/results?search_query=Tsubame+gaeshi"
+  }, {
+    "tags": ["harai-tsurikomi-ashi", "balayage", "traction", "ashi-waza"],
+    "name": "Harai-tsurikomi-ashi",
+    "translation": "Balayage avec traction",
+    "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=gGPXvWL8VbE",
+    "embedUrl": "https://www.youtube.com/embed/gGPXvWL8VbE",
+    "searchUrl": "https://www.youtube.com/results?search_query=Harai+tsurikomi+ashi"
+  }, {
+    "tags": ["o-soto-guruma", "roue", "exterieur", "ashi-waza"],
+    "name": "O-soto-guruma",
+    "translation": "Grande roue extérieure",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=92KbCm6pQeI",
+    "embedUrl": "https://www.youtube.com/embed/92KbCm6pQeI",
+    "searchUrl": "https://www.youtube.com/results?search_query=O+soto+guruma"
+  }, {
+    "tags": ["o-soto-gaeshi", "contre", "o-soto-gari", "ashi-waza"],
+    "name": "O-soto-gaeshi",
+    "translation": "Contre de o-soto-gari",
+    "meta": "Vidéo : Kodokan × IJF Academy 100 Techniques",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=8ZjM3X_EANo",
+    "embedUrl": "https://www.youtube.com/embed/8ZjM3X_EANo",
+    "searchUrl": "https://www.youtube.com/results?search_query=O+soto+gaeshi"
   }],
   "id": "ashi-waza",
   "label": "Ashi-waza"
@@ -1087,6 +1349,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Sumi-gaeshi",
     "translation": "Renversement de coin",
     "meta": "Vidéo : Kodokan",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=5VhduA5xkbA",
     "embedUrl": "https://www.youtube.com/watch?v=5VhduA5xkbA"
   }, {
@@ -1094,8 +1357,118 @@ const TECHNIQUE_GROUPS = [{
     "name": "Tomoe-nage",
     "translation": "Projection en cercle",
     "meta": "Vidéo : Kodokan / IJF demo",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=880WbHvHv6A",
     "embedUrl": "https://www.youtube.com/watch?v=880WbHvHv6A"
+  }, {
+    "tags": ["ura-nage", "projection", "arriere", "sutemi-waza"],
+    "name": "Ura-nage",
+    "translation": "Projection arrière",
+    "meta": "Vidéo : Kodokan",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=Fgi9b8DJ5sQ",
+    "embedUrl": "https://www.youtube.com/embed/Fgi9b8DJ5sQ",
+    "searchUrl": "https://www.youtube.com/results?search_query=Ura+nage"
+  }, {
+    "tags": ["tani-otoshi", "chute", "vallon", "sutemi-waza"],
+    "name": "Tani-otoshi",
+    "translation": "Chute dans le vallon",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=3b9Me3Fohpk",
+    "searchUrl": "https://www.youtube.com/watch?v=3b9Me3Fohpk"
+  }, {
+    "tags": ["yoko-guruma", "roue", "cote", "sutemi-waza"],
+    "name": "Yoko-guruma",
+    "translation": "Roue latérale",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=MehP6I5cY2c",
+    "searchUrl": "https://www.youtube.com/watch?v=MehP6I5cY2c"
+  }, {
+    "tags": ["yoko-gake", "accrochage", "cote", "sutemi-waza"],
+    "name": "Yoko-gake",
+    "translation": "Accrochage latéral",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=tP1Sj1uDfSo",
+    "searchUrl": "https://www.youtube.com/watch?v=tP1Sj1uDfSo"
+  }, {
+    "tags": ["ko-uchi-makikomi", "enroulement", "interieur", "sutemi-waza"],
+    "name": "Ko-uchi-makikomi",
+    "translation": "Enroulement intérieur",
+    "meta": "Vidéo : Kodokan",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=_1eygIXLD_w",
+    "embedUrl": "https://www.youtube.com/embed/_1eygIXLD_w",
+    "searchUrl": "https://www.youtube.com/results?search_query=Ko+uchi+makikomi"
+  }, {
+    "tags": ["yoko-tomo-nage", "cercle", "lateral", "sutemi-waza"],
+    "name": "Yoko-tomo-nage",
+    "translation": "Projection circulaire latérale",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=9-byceOifXo",
+    "searchUrl": "https://www.youtube.com/watch?v=9-byceOifXo"
+  }, {
+    "tags": ["uki-waza", "technique", "flottante", "sutemi-waza"],
+    "name": "Uki-waza",
+    "translation": "Technique flottante",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=weVOpJ63gII",
+    "searchUrl": "https://www.youtube.com/watch?v=weVOpJ63gII"
+  }, {
+    "tags": ["soto-makikomi", "enroulement", "exterieur", "sutemi-waza"],
+    "name": "Soto-makikomi",
+    "translation": "Enroulement extérieur",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=bWG9O1BVKtQ",
+    "searchUrl": "https://www.youtube.com/watch?v=bWG9O1BVKtQ"
+  }, {
+    "tags": ["harai-makikomi", "enroulement", "balayage", "sutemi-waza"],
+    "name": "Harai-makikomi",
+    "translation": "Enroulement avec balayage",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=VBaHzKaCXss",
+    "searchUrl": "https://www.youtube.com/watch?v=VBaHzKaCXss"
+  }, {
+    "tags": ["yoko-wakare", "separation", "cote", "sutemi-waza"],
+    "name": "Yoko-wakare",
+    "translation": "Séparation latérale",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=bp1tscHlePI",
+    "searchUrl": "https://www.youtube.com/watch?v=bp1tscHlePI"
+  }, {
+    "tags": ["yoko-otoshi", "chute", "cote", "sutemi-waza"],
+    "name": "Yoko-otoshi",
+    "translation": "Chute latérale",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=MnNG67pF_a0",
+    "embedUrl": "https://www.youtube.com/embed/MnNG67pF_a0",
+    "searchUrl": "https://www.youtube.com/watch?v=MnNG67pF_a0"
+  }, {
+    "tags": ["tawara-gaeshi", "renversement", "ballot", "sutemi-waza"],
+    "name": "Tawara-gaeshi",
+    "translation": "Renversement du ballot",
+    "meta": "Vidéo : Kodokan",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=TmTWgrmViZc",
+    "embedUrl": "https://www.youtube.com/embed/TmTWgrmViZc",
+    "searchUrl": "https://www.youtube.com/results?search_query=Tawara+gaeshi"
+  }, {
+    "tags": ["daki-wakare", "separation", "portee", "sutemi-waza"],
+    "name": "Daki-wakare",
+    "translation": "Séparation en portant",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=Hr0cOMGBDYo",
+    "embedUrl": "https://www.youtube.com/embed/Hr0cOMGBDYo",
+    "searchUrl": "https://www.youtube.com/results?search_query=Daki+wakare"
   }],
   "id": "sutemi-waza",
   "label": "Sutemi-waza"
@@ -1106,27 +1479,31 @@ const TECHNIQUE_GROUPS = [{
     "name": "Hon-gesa-gatame",
     "translation": "Contrôle fondamental latéral",
     "meta": "Vidéo : série Osaekomi (Kodokan)",
-    "videoUrl": "https://www.youtube.com/watch?v=guJ-HlAKEA8",
-    "embedUrl": "https://www.youtube.com/watch?v=guJ-HlAKEA8"
+    "dan": "1er dan",
+    "videoUrl": "https://www.youtube.com/watch?v=NDaQuJOFBYk",
+    "embedUrl": "https://www.youtube.com/watch?v=NDaQuJOFBYk"
   }, {
     "tags": ["kami-shiho-gatame", "controle", "quatre", "coins", "haut", "immobilisation"],
     "name": "Kami-shiho-gatame",
     "translation": "Contrôle des quatre coins par le haut",
     "meta": "Vidéo : série Osaekomi (Kodokan)",
-    "videoUrl": "https://www.youtube.com/watch?v=KCDo1fEIFS0",
-    "embedUrl": "https://www.youtube.com/watch?v=KCDo1fEIFS0"
+    "dan": "1er dan",
+    "videoUrl": "https://www.youtube.com/watch?v=HFuMjOv0WN8",
+    "embedUrl": "https://www.youtube.com/watch?v=HFuMjOv0WN8"
   }, {
     "tags": ["yoko-shiho-gatame", "controle", "quatre", "coins", "cote", "immobilisation"],
     "name": "Yoko-shiho-gatame",
     "translation": "Contrôle des quatre coins par le côté",
     "meta": "Vidéo : série Osaekomi (Kodokan)",
-    "videoUrl": "https://www.youtube.com/watch?v=KCDo1fEIFS0",
-    "embedUrl": "https://www.youtube.com/watch?v=KCDo1fEIFS0"
+    "dan": "1er dan",
+    "videoUrl": "https://www.youtube.com/watch?v=TT7XJVSEQxA",
+    "embedUrl": "https://www.youtube.com/watch?v=TT7XJVSEQxA"
   }, {
     "tags": ["tate-shiho-gatame", "controle", "quatre", "coins", "vertical", "immobilisation"],
     "name": "Tate-shiho-gatame",
     "translation": "Contrôle des quatre coins en position montée",
     "meta": "Vidéo : Kodokan demo",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=55-rFmBx53g",
     "embedUrl": "https://www.youtube.com/watch?v=55-rFmBx53g"
   }, {
@@ -1134,8 +1511,57 @@ const TECHNIQUE_GROUPS = [{
     "name": "Ushiro-gesa-gatame",
     "translation": "Contrôle latéral inversé",
     "meta": "Vidéo : Kodokan demo",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=SBapox2M2dE",
     "embedUrl": "https://www.youtube.com/watch?v=SBapox2M2dE"
+  }, {
+    "tags": ["kuzure-kami-shiho-gatame", "controle", "quatre", "coins", "haut", "variation", "immobilisation"],
+    "name": "Kuzure-kami-shiho-gatame",
+    "translation": "Contrôle des quatre coins par le haut (variation)",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=YUrogQWdwiY",
+    "searchUrl": "https://www.youtube.com/results?search_query=Kuzure+kami+shiho+gatame"
+  }, {
+    "tags": ["kuzure-gesa-gatame", "controle", "lateral", "variation", "immobilisation"],
+    "name": "Kuzure-gesa-gatame",
+    "translation": "Contrôle latéral (variation)",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=Q2fb9jaoUFQ",
+    "searchUrl": "https://www.youtube.com/results?search_query=Kuzure+gesa+gatame"
+  }, {
+    "tags": ["kuzure-tate-shiho-gatame", "controle", "quatre", "coins", "vertical", "variation", "immobilisation"],
+    "name": "Kuzure-tate-shiho-gatame",
+    "translation": "Contrôle vertical (variation)",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=i9VUQhqxYJU",
+    "searchUrl": "https://www.youtube.com/watch?v=i9VUQhqxYJU"
+  }, {
+    "tags": ["kuzure-yoko-shiho-gatame", "controle", "quatre", "coins", "cote", "variation", "immobilisation"],
+    "name": "Kuzure-yoko-shiho-gatame",
+    "translation": "Contrôle des quatre coins latéral (variation)",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=BzA9mEs_xdk",
+    "searchUrl": "https://www.youtube.com/watch?v=BzA9mEs_xdk"
+  }, {
+    "tags": ["makura-gesa-gatame", "controle", "lateral", "oreiller", "immobilisation"],
+    "name": "Makura-gesa-gatame",
+    "translation": "Contrôle latéral en oreiller",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=k9MYaHbYqnQ",
+    "searchUrl": "https://www.youtube.com/watch?v=k9MYaHbYqnQ"
+  }, {
+    "tags": ["kata-gatame", "controle", "epaule", "immobilisation"],
+    "name": "Kata-gatame",
+    "translation": "Contrôle par l'épaule",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=zQR3IOXxO_Q",
+    "searchUrl": "https://www.youtube.com/results?search_query=Kata+gatame"
   }],
   "id": "osaekomi-waza",
   "label": "Osaekomi-waza"
@@ -1146,6 +1572,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Gyaku-juji-jime",
     "translation": "Étranglement croisé inversé",
     "meta": "Vidéo : démo",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=t3tQriIPdlI",
     "embedUrl": "https://www.youtube.com/watch?v=t3tQriIPdlI"
   }, {
@@ -1153,6 +1580,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Hadaka-jime",
     "translation": "Étranglement à mains nues",
     "meta": "Vidéo : Kodokan",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=9f0n8jez7iA",
     "embedUrl": "https://www.youtube.com/watch?v=9f0n8jez7iA"
   }, {
@@ -1160,6 +1588,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Kata-juji-jime",
     "translation": "Étranglement croisé d’un côté",
     "meta": "Vidéo : Kodokan",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=3VZVUAmiMD8",
     "embedUrl": "https://www.youtube.com/watch?v=3VZVUAmiMD8"
   }, {
@@ -1167,8 +1596,81 @@ const TECHNIQUE_GROUPS = [{
     "name": "Nami-juji-jime",
     "translation": "Étranglement croisé normal",
     "meta": "Vidéo : Kodokan",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=k2cHry9HByQ",
     "embedUrl": "https://www.youtube.com/watch?v=k2cHry9HByQ"
+  }, {
+    "tags": ["okuri-eri-jime", "etranglement", "col", "ne-waza"],
+    "name": "Okuri-eri-jime",
+    "translation": "Étranglement en contrôlant le col",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "1er dan",
+    "videoUrl": "https://www.youtube.com/watch?v=EiqyoVcIAi8",
+    "searchUrl": "https://www.youtube.com/watch?v=EiqyoVcIAi8"
+  }, {
+    "tags": ["sankaku-jime", "triangle", "etranglement", "ne-waza"],
+    "name": "Sankaku-jime",
+    "translation": "Étranglement en triangle",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=lq1CUBRAm7s",
+    "searchUrl": "https://www.youtube.com/watch?v=lq1CUBRAm7s"
+  }, {
+    "tags": ["kata-ha-jime", "etranglement", "bras", "ne-waza"],
+    "name": "Kata-ha-jime",
+    "translation": "Étranglement avec un bras",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=yaTGgRjnwB8",
+    "searchUrl": "https://www.youtube.com/watch?v=yaTGgRjnwB8"
+  }, {
+    "tags": ["kata-te-jime", "etranglement", "une main", "ne-waza"],
+    "name": "Kata-te-jime",
+    "translation": "Étranglement à une main",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=cHeIs-fSqwE",
+    "searchUrl": "https://www.youtube.com/watch?v=cHeIs-fSqwE"
+  }, {
+    "tags": ["sode-guruma-jime", "etranglement", "manche", "ne-waza"],
+    "name": "Sode-guruma-jime",
+    "translation": "Étranglement en enroulant la manche",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=E3nvQzClcAU",
+    "searchUrl": "https://www.youtube.com/watch?v=E3nvQzClcAU"
+  }, {
+    "tags": ["morote-jime", "etranglement", "deux mains", "ne-waza"],
+    "name": "Morote-jime",
+    "translation": "Étranglement aux deux mains",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=VbW71vPdZmg",
+    "searchUrl": "https://www.youtube.com/watch?v=VbW71vPdZmg"
+  }, {
+    "tags": ["tsukkomi-jime", "etranglement", "poussee", "ne-waza"],
+    "name": "Tsukkomi-jime",
+    "translation": "Étranglement en poussant",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=dKKpnD3eLcY",
+    "searchUrl": "https://www.youtube.com/watch?v=dKKpnD3eLcY"
+  }, {
+    "tags": ["ashi-gatame-jime", "etranglement", "jambe", "ne-waza"],
+    "name": "Ashi-gatame-jime",
+    "translation": "Étranglement avec contrôle de la jambe",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=VpRamO8vKYY",
+    "searchUrl": "https://www.youtube.com/watch?v=VpRamO8vKYY"
+  }, {
+    "tags": ["ryo-te-jime", "etranglement", "double", "ne-waza"],
+    "name": "Ryo-te-jime",
+    "translation": "Étranglement avec les deux mains",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=-RHC4V7TQiY",
+    "searchUrl": "https://www.youtube.com/watch?v=-RHC4V7TQiY"
   }],
   "id": "shime-waza",
   "label": "Shime-waza"
@@ -1179,6 +1681,7 @@ const TECHNIQUE_GROUPS = [{
     "name": "Ude-hishigi-juji-gatame",
     "translation": "Clé de bras en croix",
     "meta": "Vidéo : Kodokan",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=OWgSOlCuMXw",
     "embedUrl": "https://www.youtube.com/watch?v=OWgSOlCuMXw"
   }, {
@@ -1186,8 +1689,57 @@ const TECHNIQUE_GROUPS = [{
     "name": "Ude-hishigi-ude-garami",
     "translation": "Clé de bras en enroulement",
     "meta": "Vidéo : Kodokan",
+    "dan": "1er dan",
     "videoUrl": "https://www.youtube.com/watch?v=SBf0aTma1VI",
     "embedUrl": "https://www.youtube.com/watch?v=SBf0aTma1VI"
+  }, {
+    "tags": ["ude-garami", "cle", "bras", "controle", "ne-waza"],
+    "name": "Ude-garami",
+    "translation": "Clé de bras en torsion",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "1er dan",
+    "videoUrl": "https://www.youtube.com/watch?v=AIlTvZb4RlE",
+    "searchUrl": "https://www.youtube.com/watch?v=AIlTvZb4RlE"
+  }, {
+    "tags": ["ude-hishigi-hiza-gatame", "cle", "coude", "genou", "ne-waza"],
+    "name": "Ude-hishigi-hiza-gatame",
+    "translation": "Clé de coude avec le genou",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=H2HtAJdiJcE",
+    "searchUrl": "https://www.youtube.com/watch?v=H2HtAJdiJcE"
+  }, {
+    "tags": ["ude-hishigi-waki-gatame", "cle", "coude", "aisselle", "ne-waza"],
+    "name": "Ude-hishigi-waki-gatame",
+    "translation": "Clé de coude sous l'aisselle",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "2e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=8F5p1zuJRG0",
+    "searchUrl": "https://www.youtube.com/watch?v=8F5p1zuJRG0"
+  }, {
+    "tags": ["ude-hishigi-ashi-gatame", "cle", "jambe", "ne-waza"],
+    "name": "Ude-hishigi-ashi-gatame",
+    "translation": "Clé de bras avec la jambe",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+ashi+gatame",
+    "searchUrl": "https://www.youtube.com/results?search_query=Ude+hishigi+ashi+gatame"
+  }, {
+    "tags": ["ude-hishigi-sankaku-gatame", "cle", "triangle", "ne-waza"],
+    "name": "Ude-hishigi-sankaku-gatame",
+    "translation": "Clé de bras en triangle",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=ClY7g_pX-4s",
+    "searchUrl": "https://www.youtube.com/watch?v=ClY7g_pX-4s"
+  }, {
+    "tags": ["ude-hishigi-hara-gatame", "cle", "ventre", "ne-waza"],
+    "name": "Ude-hishigi-hara-gatame",
+    "translation": "Clé de bras au ventre",
+    "meta": "Vidéo : recherche recommandée",
+    "dan": "3e dan",
+    "videoUrl": "https://www.youtube.com/watch?v=ZzEycg8R_9M",
+    "searchUrl": "https://www.youtube.com/watch?v=ZzEycg8R_9M"
   }],
   "id": "kansetsu-waza",
   "label": "Kansetsu-waza"
