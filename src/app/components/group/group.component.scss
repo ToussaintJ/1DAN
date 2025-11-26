@@ -33,15 +33,9 @@ summary .muted {
 
 @media (max-width: 720px) {
   .grid {
-    display: flex;
+    grid-template-columns: 1fr;
     overflow-x: auto;
-    gap: 12px;
-    padding: 14px 14px 14px 10px;
-    scroll-snap-type: x mandatory;
-  }
-
-  .grid > * {
-    flex: 0 0 88%;
-    scroll-snap-align: start;
+    padding: 14px;
+    -webkit-overflow-scrolling: touch;
   }
 }
