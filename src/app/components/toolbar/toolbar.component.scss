@@ -52,3 +52,18 @@
     color: var(--bg);
   }
 }
+
+@media (max-width: 800px) {
+  .toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .select select {
+    width: 100%;
+  }
+}
